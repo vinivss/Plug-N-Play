@@ -10,7 +10,7 @@ public class PlayerControl : MonoBehaviour
     int isRunningHash;
 
     _3Dcontrols input;
-
+    
     Vector2 currentMove;
     bool movementPressed;
     bool runPressed;
@@ -21,15 +21,20 @@ public class PlayerControl : MonoBehaviour
         input.CharacterControls.Movement.performed += ctx =>
         {
             currentMove = ctx.ReadValue<Vector2>();
+            Debug.Log(currentMove);
             movementPressed = currentMove.x != 0 || currentMove.y != 0;
+
+
         };
-        input.CharacterControls.Movement.performed += ctx => runPressed = ctx.ReadValueAsButton();
+
+
+        input.CharacterControls.Run.performed += ctx => runPressed = ctx.ReadValueAsButton();
     }
     void Start()
     {
         anim = GetComponent<Animator>();
         isWalkingHash = Animator.StringToHash("isWalking");
-        isRunningHash = Animator.StringToHash("isRunningHash");
+        isRunningHash = Animator.StringToHash("isRunning");
         
     }
 
@@ -37,6 +42,7 @@ public class PlayerControl : MonoBehaviour
     void Update()
     {
         handleMovement();
+        //handleRotation();
     }
    void handleMovement()
     {
@@ -50,14 +56,32 @@ public class PlayerControl : MonoBehaviour
         {
             anim.SetBool(isWalkingHash, false);
         }
+        if ((movementPressed && runPressed)&& !isRunning)
+        {
+            anim.SetBool(isRunningHash, true);
+        }
+        if ((!movementPressed || !runPressed) && isRunning)
+        {
+            anim.SetBool(isRunningHash, false);
+        }
     }
 
+    //void handleRotation()
+    //{
+    //    Vector3 currentPosition = transform.localPosition;
+
+    //    Vector3 newPosition = new Vector3(currentMove.x, 0, currentMove.y);
+
+    //    Vector3 positionToLookAt = currentPosition + newPosition;
+
+    //    transform.LookAt(positionToLookAt);
+    //}
     void OnEnable()
     {
         input.CharacterControls.Enable();
     }
 
-    private void OnDisable()
+     void OnDisable()
     {
         input.CharacterControls.Disable();
     }

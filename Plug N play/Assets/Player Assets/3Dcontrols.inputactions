@@ -7,7 +7,7 @@
             "actions": [
                 {
                     "name": "Movement",
-                    "type": "Value",
+                    "type": "PassThrough",
                     "id": "843a64b5-41c8-4e8e-b95a-4f45e19f2659",
                     "expectedControlType": "Vector2",
                     "processors": "",
@@ -19,13 +19,13 @@
                     "id": "ea25adb3-337b-422a-ae2c-3515b722c627",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "Press(behavior=2)"
                 }
             ],
             "bindings": [
                 {
                     "name": "",
-                    "id": "07d70be2-d5ba-4906-9451-a648a00b1244",
+                    "id": "6cc2d64e-7dbe-4aba-9dba-0e1f555462ad",
                     "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "StickDeadzone",
@@ -35,13 +35,117 @@
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "2D Vector",
+                    "id": "eeef41a4-6b1f-4d21-ab3a-ccf4113ed6fe",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "ff41c443-a445-4081-a592-33ce96b20513",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "d8fb094b-0586-4f2d-ae1f-b6ba4d9b6114",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "306766fc-0a70-437c-b4df-8e0079641cb6",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "e5eb1997-af1b-44ea-b8e5-5213cafaa54a",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
-                    "id": "b232337f-ca2b-4f4d-9a15-e9c9d5959f11",
-                    "path": "<Gamepad>/leftStickPress",
-                    "interactions": "Press(behavior=2)",
+                    "id": "7d418a0b-3b0c-42bc-8a67-ef178d68026f",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Run",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "061af45e-2ea6-4774-b357-5c28d11b61b0",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Run",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "CameraControls",
+            "id": "2d82f432-c291-4b4b-9bd9-139814485d3e",
+            "actions": [
+                {
+                    "name": "Look",
+                    "type": "Value",
+                    "id": "9f2ec1b3-ba49-4c0e-8d7e-8256075a2473",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ead628c0-ad9e-4318-a426-cc9d518d6d57",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2309992a-0b5e-4d5a-84d5-d4ac4743d178",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
