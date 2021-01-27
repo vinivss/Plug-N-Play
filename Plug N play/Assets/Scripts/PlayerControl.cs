@@ -27,6 +27,7 @@ public class PlayerControl : MonoBehaviour
 
         };
 
+        
 
         input.CharacterControls.Run.performed += ctx => runPressed = ctx.ReadValueAsButton();
     }
