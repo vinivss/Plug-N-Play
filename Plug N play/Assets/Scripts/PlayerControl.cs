@@ -5,15 +5,20 @@ using UnityEngine.InputSystem;
 
 public class PlayerControl : MonoBehaviour
 {
+    float gravVal = -9.81f;
+    public CharacterCamera Cam;
     Animator anim;
     int isWalkingHash;
     int isRunningHash;
-
+    Transform cameraMain;
+    public CharacterController controller;
+ 
     _3Dcontrols input;
     
     Vector2 currentMove;
     bool movementPressed;
     bool runPressed;
+    Vector3 playerVelocity;
     void Awake()
     {
         input = new _3Dcontrols();
@@ -23,27 +28,32 @@ public class PlayerControl : MonoBehaviour
             currentMove = ctx.ReadValue<Vector2>();
             Debug.Log(currentMove);
             movementPressed = currentMove.x != 0 || currentMove.y != 0;
+           
+            //Cam.TransformCam();
 
 
         };
 
+       
         
 
         input.CharacterControls.Run.performed += ctx => runPressed = ctx.ReadValueAsButton();
+        playerVelocity.y += gravVal* Time.deltaTime;
+        controller.Move(playerVelocity * Time.deltaTime);
     }
     void Start()
     {
         anim = GetComponent<Animator>();
         isWalkingHash = Animator.StringToHash("isWalking");
         isRunningHash = Animator.StringToHash("isRunning");
-        
+        cameraMain = Camera.main.transform;
     }
 
     // Update is called once per frame
     void Update()
     {
         handleMovement();
-        //handleRotation();
+        handleRotation();
     }
    void handleMovement()
     {
@@ -51,7 +61,9 @@ public class PlayerControl : MonoBehaviour
         bool isWalking = anim.GetBool(isWalkingHash);
         if  (movementPressed && !isWalking)
         {
+          
             anim.SetBool(isWalkingHash, true);
+           
         }
         if(!movementPressed && isWalking)
         {
@@ -67,16 +79,20 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
-    //void handleRotation()
-    //{
-    //    Vector3 currentPosition = transform.localPosition;
+    void handleRotation()
+    {
+        
+        
+        Vector3 currentPosition = transform.position;
 
-    //    Vector3 newPosition = new Vector3(currentMove.x, 0, currentMove.y);
+        Vector3 newPosition = new Vector3(currentMove.x, 0, currentMove.y);
 
-    //    Vector3 positionToLookAt = currentPosition + newPosition;
+        Vector3 totmove = cameraMain.forward * newPosition.z + cameraMain.right * newPosition.y;
+        totmove.y = 0;
+        Vector3 positionToLookAt = (currentPosition + totmove);
 
-    //    transform.LookAt(positionToLookAt);
-    //}
+        transform.LookAt(positionToLookAt);
+    }
     void OnEnable()
     {
         input.CharacterControls.Enable();

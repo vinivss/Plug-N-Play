@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CharacterCamera : MonoBehaviour
 {
+    float yawCamera;
+    //public CharacterController controller;
 
     public float turnspeed = 15;
         Camera mainCamera;
@@ -16,9 +18,27 @@ public class CharacterCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float yawCamera = mainCamera.transform.rotation.eulerAngles.y;
+         yawCamera = mainCamera.transform.rotation.eulerAngles.y;
+        //Vector3 Velo = controller.velocity;
 
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, yawCamera, 0), turnspeed * Time.fixedDeltaTime);
+        //Velo = new Vector3(controller.velocity.x, controller.velocity.y, controller.velocity.z);
+
+        //float speed = Velo.magnitude;
+
+        //if(speed >= 0f)
+        //{
+
+        //    Debug.Log("isread");
+
+        //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, yawCamera, 0), turnspeed * Time.fixedDeltaTime);
+
+        //}
+
+    }
+
+     void Awake()
+    {
+
         
     }
 }
