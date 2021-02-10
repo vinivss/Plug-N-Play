@@ -27,6 +27,10 @@ namespace Jupiter
         Vector3 rh, lh, rf, lf;
 
         Transform h;
+
+        bool isMirror;
+        bool isLeft;
+
         public void Init(FreeClimb c, Transform helper)
         {
             anim = c.anim;
@@ -35,8 +39,9 @@ namespace Jupiter
 
             h = helper;
         }
-        public void CreatePos(Vector3 origin)
+        public void CreatePos(Vector3 origin, Vector3 moveDir, bool isMid)
         {
+            HandleAnim(moveDir, isMid);
             IKSnap ik = CreateSnap(origin);
             CopySnapshot(ref current, ik);
 
@@ -51,6 +56,43 @@ namespace Jupiter
             UpdateIKWeight(AvatarIKGoal.RightHand, 1);
 
 
+        }
+         void UpdateGoals(Vector3 moveDir)
+        {
+            isLeft = (moveDir.x <= 0);
+
+            if(moveDir.x != 0)
+            {
+
+            }
+
+        }
+
+        void HandleAnim(Vector3 moveDir,  bool isMid)
+        {
+            if(isMid)
+            {
+                if(moveDir.y !=0)
+                {
+                    if(moveDir.y < 0)
+                    {
+
+                    }
+                    else
+                    {
+
+                    }
+                    isMirror = !isMirror;
+                    anim.SetBool("mirror", isMirror);
+                    anim.CrossFade("climb_up", 0.2f);
+
+                }
+
+            }
+            else
+            {
+                anim.CrossFade("Ledge_Idle_Together", 0.2f);
+            }
         }
         public IKSnap CreateSnap(Vector3 o)
         {

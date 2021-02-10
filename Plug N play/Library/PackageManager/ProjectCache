@@ -622,11 +622,13 @@ m_PackageAssets:
         - 1.1.18
         - 1.1.19
         - 1.1.20
+        - 1.1.22
         compatible:
         - 1.1.18
         - 1.1.19
         - 1.1.20
-        verified: 1.1.20
+        - 1.1.22
+        verified: 1.1.22
       dependencies:
       - name: com.unity.ext.nunit
         version: 1.0.0
