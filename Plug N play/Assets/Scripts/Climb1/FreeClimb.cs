@@ -50,6 +50,7 @@ namespace Jupiter
 
         public IKSnap baseiKSnap;
 
+        public FreeClimbAnimHook a_hook;
 
 
         void Awake()
@@ -76,7 +77,7 @@ namespace Jupiter
         {
             helper = new GameObject().transform;
             helper.name = "climb helper";
-
+            a_hook.Init(this, helper);
             CheckforClimb();
         }
 
@@ -166,6 +167,8 @@ namespace Jupiter
                 //Vector3 tp = helper.position - transform.position;
 
                 targetPos = helper.position;
+
+                a_hook.CreatePos(targetPos);
             }
             else
             {
@@ -195,6 +198,10 @@ namespace Jupiter
                 //Debug.Log("climb");
                 posT = 1;
                 inPosition = true;
+
+                a_hook.CreatePos(targetPos);
+
+
 
             }
 
