@@ -52,6 +52,10 @@ namespace Jupiter
 
         public FreeClimbAnimHook a_hook;
 
+        public bool isMid;
+
+        
+
 
         void Awake()
         {
@@ -150,7 +154,15 @@ namespace Jupiter
 
                 Vector3 moveDir = (h + v).normalized;
                 //Debug.Log(moveDir);
+                if(isMid)
+                {
+                    if(moveDir == Vector3.zero)
+                    {
+                        return;
+                    }
+                }
 
+                
                 bool canMove = CanMove(moveDir);
                 //Debug.Log(canMove);
                 if (!canMove || moveDir == Vector3.zero)
@@ -159,16 +171,22 @@ namespace Jupiter
                     return;
                 }
 
+                isMid = !isMid;
+
                 posT = 0;
                 isLerping = true;
 
                 startPos = transform.position;
 
-                //Vector3 tp = helper.position - transform.position;
+                Vector3 tp = helper.position - transform.position;
+                float d = Vector3.Distance(helper.position, startPos) / 2;
 
-                targetPos = helper.position;
+                tp *= possitionOffset;
+                tp += transform.position;
+                targetPos = (isMid) ? tp : helper.position;
+                
 
-                a_hook.CreatePos(targetPos);
+                a_hook.CreatePos(targetPos, moveDir,isMid);
             }
             else
             {
@@ -199,7 +217,7 @@ namespace Jupiter
                 posT = 1;
                 inPosition = true;
 
-                a_hook.CreatePos(targetPos);
+                a_hook.CreatePos(targetPos, Vector3.zero, false);
 
 
 
