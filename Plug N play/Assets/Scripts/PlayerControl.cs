@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerControl : MonoBehaviour
 {
-    float gravVal = -9.81f;
+    public float gravVal = -9.81f;
     public CharacterCamera Cam;
     Animator anim;
     int isWalkingHash;
@@ -38,8 +38,7 @@ public class PlayerControl : MonoBehaviour
         
 
         input.CharacterControls.Run.performed += ctx => runPressed = ctx.ReadValueAsButton();
-        playerVelocity.y += gravVal* Time.deltaTime;
-        controller.Move(playerVelocity * Time.deltaTime);
+      
     }
     void Start()
     {
@@ -54,9 +53,16 @@ public class PlayerControl : MonoBehaviour
     {
         handleMovement();
         handleRotation();
+        handleGrav();
+    }
+    void handleGrav()
+    {
+        playerVelocity.y += gravVal * Time.deltaTime;
+        controller.Move(playerVelocity * Time.deltaTime);
     }
    void handleMovement()
     {
+       
         bool isRunning = anim.GetBool(isRunningHash);
         bool isWalking = anim.GetBool(isWalkingHash);
         if  (movementPressed && !isWalking)

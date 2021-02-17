@@ -45,16 +45,8 @@ namespace Jupiter
         {
             delta = Time.deltaTime;
             HandleAnim(moveDir, isMid);
-            IKSnap ik = CreateSnap(origin);
-            CopySnapshot(ref current, ik);
 
-            //UpdateIKPosition(AvatarIKGoal.LeftFoot, current.lf);
-            //UpdateIKPosition(AvatarIKGoal.RightFoot, current.rf);
-            //UpdateIKPosition(AvatarIKGoal.LeftHand, current.lh);
-            //UpdateIKPosition(AvatarIKGoal.RightHand, current.rh);
-
-
-            if(!isMid)
+            if (!isMid)
             {
                 UpdateGoals(moveDir);
                 prevMovDir = moveDir;
@@ -63,6 +55,16 @@ namespace Jupiter
             {
                 UpdateGoals(prevMovDir);
             }
+            IKSnap ik = CreateSnap(origin);
+            CopySnapshot(ref current, ik);
+
+          
+            //UpdateIKPosition(AvatarIKGoal.LeftFoot, current.lf);
+            //UpdateIKPosition(AvatarIKGoal.RightFoot, current.rf);
+            //UpdateIKPosition(AvatarIKGoal.LeftHand, current.lh);
+            //UpdateIKPosition(AvatarIKGoal.RightHand, current.rh);
+
+
             SetIKPosition(isMid, goals.lf, current.lf, AvatarIKGoal.LeftFoot);
             SetIKPosition(isMid, goals.rf, current.rf, AvatarIKGoal.RightFoot);
             SetIKPosition(isMid, goals.lh, current.lh, AvatarIKGoal.LeftHand);
@@ -79,12 +81,24 @@ namespace Jupiter
         {
             isLeft = (moveDir.x <= 0);
 
-            if(moveDir.x != 0)
+            if (moveDir.x != 0)
             {
                 goals.lh = isLeft;
-                goals.rf = isLeft;
+                goals.rf = !isLeft;
                 goals.lf = isLeft;
-                goals.rh = isLeft;
+                goals.rh = !isLeft;
+            }
+            else
+            {
+                bool isEnabled = isMirror;
+                if(moveDir.y < 0)
+                {
+                    isEnabled =!isEnabled;
+                }
+                goals.lh = isEnabled;
+                goals.rf = !isEnabled;
+                goals.lf = isEnabled;
+                goals.rh = !isEnabled;
             }
 
         }
@@ -181,6 +195,7 @@ namespace Jupiter
             to.rf = from.rf;
             
         }
+      
         void SetIKPosition(bool isMid, bool isTrue, Vector3 pos, AvatarIKGoal goal)
         {
             if(isMid)
@@ -278,7 +293,7 @@ namespace Jupiter
                 ikState.isSet = true;
             }
             ikState.positionWeight = w;
-            ikState.position = Vector3.Lerp(ikState.position, tp, delta * lerpSpeed );
+            ikState.position = Vector3.Lerp(ikState.position, tp, delta * lerpSpeed);
             anim.SetIKPositionWeight(goal, ikState.positionWeight);
             anim.SetIKPosition(goal, ikState.position);
         }

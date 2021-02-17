@@ -154,21 +154,23 @@ namespace Jupiter
 
                 Vector3 moveDir = (h + v).normalized;
                 //Debug.Log(moveDir);
-                if(isMid)
+                if (isMid)
                 {
-                    if(moveDir == Vector3.zero)
+                    if (moveDir == Vector3.zero)
                     {
                         return;
                     }
                 }
 
-                
-                bool canMove = CanMove(moveDir);
-                //Debug.Log(canMove);
-                if (!canMove || moveDir == Vector3.zero)
+                else
                 {
-                    //Debug.Log("Fuck");
-                    return;
+                    bool canMove = CanMove(moveDir);
+                    //Debug.Log(canMove);
+                    if (!canMove || moveDir == Vector3.zero)
+                    {
+                        //Debug.Log("Fuck");
+                        return;
+                    }
                 }
 
                 isMid = !isMid;
@@ -209,7 +211,7 @@ namespace Jupiter
 
         void GetInPosition()
         {
-            posT += delta;
+            posT += delta * climbSpeed;
 
             if (posT > 1)
             {
@@ -219,6 +221,7 @@ namespace Jupiter
 
                 a_hook.CreatePos(targetPos, Vector3.zero, false);
 
+         
 
 
             }
