@@ -13,6 +13,7 @@ namespace Jupiter
         IKSnap iKB;
         IKSnap current = new IKSnap();
         IKSnap next = new IKSnap();
+        IKGoals goals = new IKGoals();
 
         public float w_rh;
 
@@ -25,12 +26,13 @@ namespace Jupiter
         public float wallOffset = 0;
 
         Vector3 rh, lh, rf, lf;
-
+        Vector3 prevMovDir;
         Transform h;
 
         bool isMirror;
         bool isLeft;
-
+        float delta;
+        public float lerpSpeed = 1;
         public void Init(FreeClimb c, Transform helper)
         {
             anim = c.anim;
@@ -41,14 +43,30 @@ namespace Jupiter
         }
         public void CreatePos(Vector3 origin, Vector3 moveDir, bool isMid)
         {
+            delta = Time.deltaTime;
             HandleAnim(moveDir, isMid);
             IKSnap ik = CreateSnap(origin);
             CopySnapshot(ref current, ik);
 
-            UpdateIKPosition(AvatarIKGoal.LeftFoot, current.lf);
-            UpdateIKPosition(AvatarIKGoal.RightFoot, current.rf);
-            UpdateIKPosition(AvatarIKGoal.LeftHand, current.lh);
-            UpdateIKPosition(AvatarIKGoal.RightHand, current.rh);
+            //UpdateIKPosition(AvatarIKGoal.LeftFoot, current.lf);
+            //UpdateIKPosition(AvatarIKGoal.RightFoot, current.rf);
+            //UpdateIKPosition(AvatarIKGoal.LeftHand, current.lh);
+            //UpdateIKPosition(AvatarIKGoal.RightHand, current.rh);
+
+
+            if(!isMid)
+            {
+                UpdateGoals(moveDir);
+                prevMovDir = moveDir;
+            }
+            else
+            {
+                UpdateGoals(prevMovDir);
+            }
+            SetIKPosition(isMid, goals.lf, current.lf, AvatarIKGoal.LeftFoot);
+            SetIKPosition(isMid, goals.rf, current.rf, AvatarIKGoal.RightFoot);
+            SetIKPosition(isMid, goals.lh, current.lh, AvatarIKGoal.LeftHand);
+            SetIKPosition(isMid, goals.rh, current.rh, AvatarIKGoal.RightHand);
 
             UpdateIKWeight(AvatarIKGoal.LeftFoot, 1);
             UpdateIKWeight(AvatarIKGoal.RightFoot, 1);
@@ -63,7 +81,10 @@ namespace Jupiter
 
             if(moveDir.x != 0)
             {
-
+                goals.lh = isLeft;
+                goals.rf = isLeft;
+                goals.lf = isLeft;
+                goals.rh = isLeft;
             }
 
         }
@@ -107,6 +128,7 @@ namespace Jupiter
             r.rh = GetPosActual(_rh);
 
             //r.lf = LocalToWorld(iKB.lf);
+
             Vector3 _lf = LocalToWorld(iKB.lf);
 
             r.lf = GetPosActual(_lf);
@@ -159,7 +181,27 @@ namespace Jupiter
             to.rf = from.rf;
             
         }
+        void SetIKPosition(bool isMid, bool isTrue, Vector3 pos, AvatarIKGoal goal)
+        {
+            if(isMid)
+            {
+                if (isTrue)
+                {
+                    Vector3 p = GetPosActual(pos);
+                    UpdateIKPosition(goal, p);
 
+                }
+                else
+                {
+                    if(!isTrue)
+                    {
+                        Vector3 p = GetPosActual(pos);
+                        UpdateIKPosition(goal, p);
+
+                    }
+                }
+            }
+        }
         public void UpdateIKPosition(AvatarIKGoal goal, Vector3 pos)
         {
             switch(goal)
@@ -203,12 +245,13 @@ namespace Jupiter
                     w_rh = w;
                     break;
 
-                default:
+                default: 
                     break;
             }
         }
          void OnAnimatorIK()
         {
+            delta = Time.deltaTime;
             SetIKpos(AvatarIKGoal.LeftHand, lh, w_lh);
             SetIKpos(AvatarIKGoal.RightHand, rh, w_rh);
             SetIKpos(AvatarIKGoal.LeftFoot, lf, w_lf);
@@ -217,8 +260,75 @@ namespace Jupiter
 
         void SetIKpos(AvatarIKGoal goal, Vector3 tp, float w )
         {
-            anim.SetIKPositionWeight(goal, w);
-            anim.SetIKPosition(goal, tp);
+            IKStates ikState = GetIKState(goal);
+            if(ikState == null)
+            {
+                ikState = new IKStates();
+                ikState.goal = goal;
+                ikstates.Add(ikState);
+            }
+            if (w == 0)
+            {
+                ikState.isSet = false;
+
+            }
+            if(!ikState.isSet)
+            {
+                ikState.position = GoalToBodyBones(goal).position;
+                ikState.isSet = true;
+            }
+            ikState.positionWeight = w;
+            ikState.position = Vector3.Lerp(ikState.position, tp, delta * lerpSpeed );
+            anim.SetIKPositionWeight(goal, ikState.positionWeight);
+            anim.SetIKPosition(goal, ikState.position);
         }
+        Transform GoalToBodyBones(AvatarIKGoal goal)
+        {
+            switch (goal)
+            {
+                case AvatarIKGoal.LeftFoot:
+                    return anim.GetBoneTransform(HumanBodyBones.LeftFoot);
+
+                case AvatarIKGoal.RightFoot:
+                    return anim.GetBoneTransform(HumanBodyBones.RightFoot);
+                 
+                case AvatarIKGoal.LeftHand:
+                    return anim.GetBoneTransform(HumanBodyBones.LeftHand);
+
+                default:
+                case AvatarIKGoal.RightHand:
+                    return anim.GetBoneTransform(HumanBodyBones.RightHand);                
+            }
+        }
+       
+        IKStates GetIKState(AvatarIKGoal goal)
+        {
+            IKStates r = null;
+            foreach(IKStates i in ikstates)
+            {
+                if(i.goal == goal)
+                {
+                    r = i;
+                    break;
+                }
+            }
+            return r;
+        }
+        List<IKStates> ikstates = new List<IKStates>();
+
+        class IKStates
+        {
+            public AvatarIKGoal goal;
+            public Vector3 position;
+            public float positionWeight;
+            public bool isSet = false;
+        }
+    }
+    public class IKGoals
+    {
+        public bool rh;
+        public bool lh;
+        public bool rf;
+        public bool lf;
     }
 }
