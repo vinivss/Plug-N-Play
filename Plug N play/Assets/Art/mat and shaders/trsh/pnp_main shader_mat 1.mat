@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: pnp_main shader_mat 1
+  m_Shader: {fileID: 4800000, guid: 234b39cf5d4d56541a1713d32650a141, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 08a6669ca3c82b44280abcdf3bfaebb5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _maintex:
+        m_Texture: {fileID: 2800000, guid: 8ea0f0ee579b9d041b3b15dda91ac8ba, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _maintexture:
+        m_Texture: {fileID: 2800000, guid: 08a6669ca3c82b44280abcdf3bfaebb5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _pattern:
+        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 20, y: 20}
+        m_Offset: {x: 0, y: 0}
+    - _ramp:
+        m_Texture: {fileID: 2800000, guid: a8f5ec4c1352c9f439d504ad61bfadd3, type: 3}
+        m_Scale: {x: 0.49, y: 1}
+        m_Offset: {x: 0.5, y: 0}
+    - _ramptex:
+        m_Texture: {fileID: 2800000, guid: a8f5ec4c1352c9f439d504ad61bfadd3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Gloss: 0.8
+    - _Metallic: 0
+    - _backlightamount: 2
+    - _brightrimlightsmoothmax: 0.06
+    - _brightrimlightsmoothmin: 0.01
+    - _fresnelamount: 10
+    - _node_469: 0
+    - _node_6896: 0.03
+    - _node_9980: 2.235658
+    - _rimlightstrength: 44.4
+    - _rimlightthickness: 1
+    - _rimsize: 3.118378
+    - _rimsmoothmax: 0.02
+    - _rimsmoothmin: 0.01
+    m_Colors:
+    - _Color: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+    - _brightbacklightblendamount: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 1}
+    - _brightrimlightamount: {r: 0.3396226, g: 0.3396226, b: 0.3396226, a: 1}
+    - _dark: {r: 0, g: 0, b: 0, a: 1}
+    - _darkforspotted: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _faintglowaroundedgesblendamount: {r: 0.084905684, g: 0.08370419, b: 0.08370419, a: 1}
+    - _greycolorforblendingbacklight: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 1}
+    - _light: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 1}
+    - _lightforspotted: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _node_2246: {r: 0.1037736, g: 0.1037736, b: 0.1037736, a: 1}
+    - _node_2762: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 1}
+    - _node_3136: {r: 0.6698113, g: 0.60861987, b: 0.57818615, a: 1}
+    - _node_4266: {r: 0.3018868, g: 0.2152583, b: 0.1836953, a: 1}
+    - _node_7976: {r: 1, g: 1, b: 1, a: 1}
+    - _subleoppositeoflightblending: {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 1}
+    - _subtleedgelightblendingamount: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 1}
+    - _thickbacklightblendamount: {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
+    - _thickbacklightblendamount_copy: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 1}
+  m_BuildTextureStacks: []
