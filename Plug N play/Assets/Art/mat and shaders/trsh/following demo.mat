@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: following demo
+  m_Shader: {fileID: 4800000, guid: d57c171aeb40b754596e819e6f3532b6, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _maintexture:
+        m_Texture: {fileID: 2800000, guid: 08a6669ca3c82b44280abcdf3bfaebb5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ramp:
+        m_Texture: {fileID: 2800000, guid: a8f5ec4c1352c9f439d504ad61bfadd3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _lighttodarkproportion: 0.25
+    - _outlinestrength: 12
+    - _outlinethickness: 0.01
+    - _rimlightstrength: 42.01
+    - _rimsmoothmax: 0.02
+    - _rimsmoothmax_copy: 0.02
+    - _rimsmoothmin: 0.01
+    - _rimsmoothmin_copy: 0.01
+    - _shininess: 690.99
+    - _specularsmooth1: 0
+    - _specularsmooth2: 0
+    - _specularsmoothmax: 0.02
+    - _specularsmoothmin: 0.01
+    m_Colors:
+    - _node_4266: {r: 0.2169811, g: 0.2169811, b: 0.2169811, a: 1}
+    - _outlinecolor: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
+    - _softenhighlight: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
