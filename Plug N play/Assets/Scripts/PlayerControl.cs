@@ -7,7 +7,7 @@ public class PlayerControl : MonoBehaviour
 {
     public float gravVal = -9.81f;
     public CharacterCamera Cam;
-    Animator anim;
+    public Animator anim;
     int isWalkingHash;
     int isRunningHash;
     Transform cameraMain;

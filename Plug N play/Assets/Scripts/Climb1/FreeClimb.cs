@@ -34,6 +34,7 @@ namespace Jupiter
         public float climbSpeed = 3;
 
         public float angledist = 1;
+        public float raytomovedir = 0.7f;
         public float rotateSpeed = 5;
 
         Transform helper;
@@ -185,8 +186,7 @@ namespace Jupiter
 
                 tp *= possitionOffset;
                 tp += transform.position;
-                targetPos = (isMid) ? tp : helper.position;
-                
+                targetPos = (isMid) ? tp : helper.position;          
 
                 a_hook.CreatePos(targetPos, moveDir,isMid);
             }
@@ -220,10 +220,6 @@ namespace Jupiter
                 inPosition = true;
 
                 a_hook.CreatePos(targetPos, Vector3.zero, false);
-
-         
-
-
             }
 
             Vector3 tarPos = Vector3.Lerp(startPos, targetPos, posT);
@@ -248,15 +244,18 @@ namespace Jupiter
         bool CanMove(Vector3 moveDir)
         {
             Vector3 origin = transform.position;
-            float dis = possitionOffset;
+            float dis = raytomovedir;
             Vector3 dir = moveDir;
 
-            Debug.DrawRay(origin, dir * dis, Color.red);
+            Debugline.singleton.SetLine(origin, origin + (dir * dis), 0);
+           // Debug.DrawRay(origin, dir * dis, Color.red);
 
+            //Raycast towards the direction you want to move
             RaycastHit hit;
 
             if (Physics.Raycast(origin, dir, out hit, dis))
             {
+                // check if its a corner
                 //Debug.LogError("Shit");
                 return false;
             }
@@ -267,25 +266,36 @@ namespace Jupiter
 
             float dis2 = angledist;
 
-            Debug.DrawRay(origin, dir * dis2, Color.green);
+            //cast towards wall
+            Debugline.singleton.SetLine(origin, origin + (dir * dis2), 1);
+           // Debug.DrawRay(origin, dir * dis2, Color.green);
 
-            if (Physics.Raycast(origin, dir, out hit, dis))
+            if (Physics.Raycast(origin, dir, out hit, dis2))
             {
                 //Debug.Log("Hit");
                 helper.position = PosWithOffset(origin, hit.point);
                 helper.rotation = Quaternion.LookRotation(-hit.normal);
                 return true;
             }
-
+            origin = origin + (dir * dis2);
+            dir = -moveDir;
+            Debugline.singleton.SetLine(origin, origin + dir , 1);
+            if (Physics.Raycast(origin,dir,out hit, angledist ))
+            {
+                helper.position = PosWithOffset(origin, hit.point);
+                helper.rotation = Quaternion.LookRotation(-hit.normal);
+                return true;
+            }
+           
             origin += dir * dis2;
 
             dir = -Vector3.up;
-
-            Debug.DrawRay(origin, dir, Color.blue);
+            Debugline.singleton.SetLine(origin, origin + dir , 2);
+            //Debug.DrawRay(origin, dir, Color.blue);
 
             if (Physics.Raycast(origin, dir, out hit, dis2))
             {
-                float angle = Vector3.Angle(helper.up, hit.normal);
+                float angle = Vector3.Angle(-helper.forward, hit.normal);
                 if (angle < 40)
                 {
                     helper.position = PosWithOffset(origin, hit.point);
