@@ -102,11 +102,13 @@ public class PlayerControl : MonoBehaviour
     void OnEnable()
     {
         input.CharacterControls.Enable();
+        input.CameraControls.Enable();
     }
 
      void OnDisable()
     {
         input.CharacterControls.Disable();
+        input.CameraControls.Disable();
     }
 
 }

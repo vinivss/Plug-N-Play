@@ -352,7 +352,7 @@ MonoBehaviour:
   w_lh: 0
   w_lf: 0
   w_rf: 0
-  wallOffset: 0.25
+  wallOffset: 0.35
   lerpSpeed: 5
 --- !u!1 &311916062
 GameObject:
@@ -595,7 +595,7 @@ MonoBehaviour:
   anim: {fileID: 1561976892}
   isClimbing: 0
   possitionOffset: 0.7
-  offsetfromwall: 0.45
+  offsetfromwall: 0.6
   speed_multiplier: 0.2
   climbSpeed: 3
   angledist: 1
@@ -604,8 +604,8 @@ MonoBehaviour:
   baseiKSnap:
     rh: {x: 0.29, y: 0.7, z: 0.3}
     lh: {x: -0.32, y: 0.72, z: 0.3}
-    lf: {x: -0.25, y: -0.2, z: 0.3}
-    rf: {x: 0.25, y: -0.2, z: 0.3}
+    lf: {x: -0.25, y: -0.3, z: 0.3}
+    rf: {x: 0.25, y: -0.3, z: 0.3}
   a_hook: {fileID: 280294771}
   isMid: 0
 --- !u!4 &490414805

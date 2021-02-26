@@ -286,6 +286,7 @@ namespace Jupiter
                 helper.rotation = Quaternion.LookRotation(-hit.normal);
                 return true;
             }
+         
            
             origin += dir * dis2;
 
