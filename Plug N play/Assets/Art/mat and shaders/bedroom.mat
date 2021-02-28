@@ -29,8 +29,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
-    - _brightrimlightamount: {r: 0.3396226, g: 0.3396226, b: 0.3396226, a: 1}
-    - _faintglowaroundedgesblendamount: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 1}
+    - _brightrimlightamount: {r: 0.047169805, g: 0.047169805, b: 0.047169805, a: 1}
+    - _faintglowaroundedgesblendamount: {r: 0.122641504, g: 0.122641504, b: 0.122641504, a: 1}
     - _subtleedgelightblendingamount: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 1}
     - _thickbacklightblendamount: {r: 0.05882353, g: 0.05882353, b: 0.05882353, a: 1}
     - _thickbacklightblendamount_copy: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 1}
