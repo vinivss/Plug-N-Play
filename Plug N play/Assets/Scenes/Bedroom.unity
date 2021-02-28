@@ -3531,6 +3531,7 @@ GameObject:
   - component: {fileID: 1696237689}
   - component: {fileID: 1696237691}
   - component: {fileID: 1696237690}
+  - component: {fileID: 1696237692}
   m_Layer: 0
   m_Name: bedroom_floor
   m_TagString: Untagged
@@ -3600,6 +3601,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1696237688}
+  m_Mesh: {fileID: -7975728377913751215, guid: 79879f03c043c0341bc865af249937b6, type: 3}
+--- !u!64 &1696237692
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696237688}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: -7975728377913751215, guid: 79879f03c043c0341bc865af249937b6, type: 3}
 --- !u!1 &1729654900
 GameObject:
@@ -4161,6 +4176,7 @@ GameObject:
   - component: {fileID: 1921090762}
   - component: {fileID: 1921090764}
   - component: {fileID: 1921090763}
+  - component: {fileID: 1921090765}
   m_Layer: 0
   m_Name: bedroom_walls
   m_TagString: Untagged
@@ -4230,6 +4246,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1921090761}
+  m_Mesh: {fileID: -543635066609430685, guid: 79879f03c043c0341bc865af249937b6, type: 3}
+--- !u!64 &1921090765
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921090761}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: -543635066609430685, guid: 79879f03c043c0341bc865af249937b6, type: 3}
 --- !u!1 &1946120117
 GameObject:
