@@ -140,7 +140,7 @@ namespace Jupiter
             }
             else
             {
-                anim.CrossFade("Ledge_Idle_Together", 0.2f);
+                anim.CrossFade("climb_idle", 0.2f);
             }
         }
         public IKSnap CreateSnap(Vector3 o)
