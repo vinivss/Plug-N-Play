@@ -28,6 +28,7 @@ namespace Jupiter
       
         void Awake()
         {
+            Cursor.lockState = CursorLockMode.Locked;
             input = new _3Dcontrols();
 
             input.CharacterControls.Movement.performed += ctx =>

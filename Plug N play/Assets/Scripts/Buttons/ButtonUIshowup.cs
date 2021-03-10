@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
+
 
 
 public class ButtonUIshowup : MonoBehaviour
@@ -22,6 +22,7 @@ public class ButtonUIshowup : MonoBehaviour
             if (isIn == true)
             {
                 turnonnut.SetActive(true);
+                Cursor.lockState = CursorLockMode.None;
             }
         };
     }
