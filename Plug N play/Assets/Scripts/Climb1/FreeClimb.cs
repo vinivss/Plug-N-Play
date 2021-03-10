@@ -92,16 +92,18 @@ namespace Jupiter
 
         public bool CheckforClimb()
         {
+           
             Vector3 origin = transform.position;
 
-            origin.y += 2;
+            origin.y += 2f;
 
             Vector3 dir = transform.forward;
 
             RaycastHit hit;
-
-            if (Physics.Raycast(origin, dir, out hit, 2, ignorelayer))
+            //Debugline.singleton.SetLine(origin, dir+ origin, 5);
+            if (Physics.Raycast(origin, dir, out hit, 1))
             {
+                Debug.LogError("fuuck");
                 helper.position = PosWithOffset(origin, hit.point);
                 InitForclimb(hit);
                 return true;
@@ -113,7 +115,6 @@ namespace Jupiter
         {
             isClimbing = true;
             a_hook.enabled = true;
-
 
             helper.transform.rotation = Quaternion.LookRotation(-hit.normal);
 
@@ -215,7 +216,7 @@ namespace Jupiter
 
         void GetInPosition()
         {
-            posT += delta * climbSpeed;
+            posT += delta * 3;
 
             if (posT > 1)
             {
@@ -319,11 +320,12 @@ namespace Jupiter
             RaycastHit hit;
 
             Debugline.singleton.SetLine(Origin, Dir, 1);
-            if(Physics.Raycast(Origin,Dir,out hit, 0.5f, ignorelayer))
+            if(Physics.Raycast(Origin,Dir,out hit, 1.2f, ignorelayer))
             {
                 
                 a_hook.enabled = false;
                 isClimbing = false;
+       
                 control.OpenController();
              
 

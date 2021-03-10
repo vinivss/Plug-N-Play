@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
 
     public bool Climber;
-
+    public bool MaximumOverdrive;
+    public bool CarReady;
 
 }

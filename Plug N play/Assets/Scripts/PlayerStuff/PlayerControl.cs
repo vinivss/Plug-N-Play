@@ -15,14 +15,14 @@ namespace Jupiter
         public CharacterController controller;
 
         public bool isClimbing;
-        public  FreeClimb freeClimb;
+        //public  FreeClimb freeClimb;
         _3Dcontrols input;
 
         Vector2 currentMove;
         bool movementPressed;
         bool runPressed;
         Vector3 playerVelocity;
-        //bool climbOff;
+        bool climbOff;
         float climbTimer;
         Rigidbody rigid;
       
@@ -59,32 +59,32 @@ namespace Jupiter
         // Update is called once per frame
         void Update()
         {
-            //if (isClimbing)
-            //{
-            //    freeClimb.Tick(Time.deltaTime);
-            //    return; 
-            //}
+            if (isClimbing)
+            {
+                //freeClimb.Tick(Time.deltaTime);
+                return;
+            }
 
-            //if(controller.isGrounded)
-            //{
-            //    if (!climbOff)
-            //    {
-            //        isClimbing = freeClimb.CheckforClimb();
+            if (controller.isGrounded)
+            {
+                if (!climbOff)
+                {
+                    //isClimbing = freeClimb.CheckforClimb();
 
-            //        if (isClimbing)
-            //        {
+                    if (isClimbing)
+                    {
 
-            //            CloseController();
-            //        }
-            //    }
-            //}
-            //if(climbOff)
-            //{
-            //    if(Time.realtimeSinceStartup-climbTimer>1)
-            //    {
-            //        climbOff = false;
-            //    }
-            //}
+                        CloseController();
+                    }
+                }
+            }
+            if (climbOff)
+            {
+                if (Time.realtimeSinceStartup - climbTimer > 1)
+                {
+                    climbOff = false;
+                }
+            }
             handleMovement();
             handleRotation();
             handleGrav();
@@ -138,6 +138,7 @@ namespace Jupiter
         {
             OnDisable();
             rigid.isKinematic = true;
+            isClimbing = false;
             controller.enabled = false;
             //anim.enabled = false;
         }
@@ -149,13 +150,13 @@ namespace Jupiter
             rigid.isKinematic = false;
             controller.enabled = true;
             //anim.enabled = true;
-            //climbOff = true;
+            climbOff = true;
             climbTimer = Time.realtimeSinceStartup;
         }
         void OnEnable()
         {
             input.CharacterControls.Enable();
-            //input.CameraControls.Enable();
+            input.CameraControls.Enable();
         }
 
         void OnDisable()
