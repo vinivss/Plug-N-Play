@@ -9,5 +9,7 @@ public class GameManager : MonoBehaviour
     public bool MaximumOverdrive;
     public bool CarReady;
     public bool RedCarMove;
+    public bool Slider;
+    public bool BlueCarMove;
 
 }
