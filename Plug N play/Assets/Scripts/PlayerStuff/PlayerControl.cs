@@ -34,7 +34,7 @@ namespace Jupiter
             input.CharacterControls.Movement.performed += ctx =>
             {
                 currentMove = ctx.ReadValue<Vector2>();
-                Debug.Log(currentMove);
+                //Debug.Log(currentMove);
                 movementPressed = currentMove.x != 0 || currentMove.y != 0;
 
             //Cam.TransformCam();
