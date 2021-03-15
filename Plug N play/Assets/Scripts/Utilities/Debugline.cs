@@ -30,6 +30,7 @@ namespace Jupiter
                 CreateLine(index);
             lines[index].SetPosition(0, startpos);
             lines[index].SetPosition(1, endpos);
+         
            
         }
 
