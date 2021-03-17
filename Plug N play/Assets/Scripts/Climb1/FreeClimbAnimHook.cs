@@ -116,7 +116,7 @@ namespace Jupiter
                     if (moveDir.x == 0)
                     {
                         isMirror = !isMirror;
-                        anim.SetBool("mirror", isMirror);
+                        anim.SetBool("ismirror", isMirror);
                     }
                     else
                     {
@@ -125,12 +125,12 @@ namespace Jupiter
                         if (moveDir.y < 0)
                         {
                             isMirror = (moveDir.x > 0);
-                            anim.SetBool("mirror", isMirror);
+                            anim.SetBool("ismirror", isMirror);
                         }
                         else
                         {
                             isMirror = (moveDir.x<0) ;
-                            anim.SetBool("mirror", isMirror);
+                            anim.SetBool("ismirror", isMirror);
                         }
                     }
                     anim.CrossFade("climb_up", 0.2f);
