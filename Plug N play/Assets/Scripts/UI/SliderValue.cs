@@ -9,7 +9,7 @@ namespace Jupiter
     {
         GameManager manager;
         public Slider Slider;
-        UITriggers Bluecar;
+        //UITriggers Bluecar;
         // Start is called before the first frame update
         private void Awake()
         {
