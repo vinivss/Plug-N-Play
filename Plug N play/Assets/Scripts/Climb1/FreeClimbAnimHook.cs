@@ -32,7 +32,7 @@ namespace Jupiter
         bool isMirror;
         bool isLeft;
         float delta;
-        public float lerpSpeed = 1;
+        public float lerpSpeed = 5;
         public void Init(FreeClimb c, Transform helper)
         {
             anim = c.anim;
@@ -43,8 +43,10 @@ namespace Jupiter
         }
         public void CreatePos(Vector3 origin, Vector3 moveDir, bool isMid)
         {
+          
             delta = Time.deltaTime;
             HandleAnim(moveDir, isMid);
+           
 
             if (!isMid)
             {
@@ -101,6 +103,8 @@ namespace Jupiter
                 goals.rh = !isEnabled;
             }
 
+
+
         }
 
         void HandleAnim(Vector3 moveDir,  bool isMid)
@@ -109,16 +113,26 @@ namespace Jupiter
             {
                 if(moveDir.y !=0)
                 {
-                    if(moveDir.y < 0)
+                    if (moveDir.x == 0)
                     {
-
+                        isMirror = !isMirror;
+                        anim.SetBool("ismirror", isMirror);
                     }
                     else
                     {
 
+
+                        if (moveDir.y < 0)
+                        {
+                            isMirror = (moveDir.x > 0);
+                            anim.SetBool("ismirror", isMirror);
+                        }
+                        else
+                        {
+                            isMirror = (moveDir.x<0) ;
+                            anim.SetBool("ismirror", isMirror);
+                        }
                     }
-                    isMirror = !isMirror;
-                    anim.SetBool("mirror", isMirror);
                     anim.CrossFade("climb_up", 0.2f);
 
                 }
@@ -126,37 +140,38 @@ namespace Jupiter
             }
             else
             {
-                anim.CrossFade("Ledge_Idle_Together", 0.2f);
+                anim.CrossFade("climb_idle", 0.2f);
             }
         }
         public IKSnap CreateSnap(Vector3 o)
         {
             IKSnap r = new IKSnap();
+
             //r.lh = LocalToWorld(iKB.lh);
 
             Vector3 _lh = LocalToWorld(iKB.lh);
-            r.lh = GetPosActual(_lh);
+            r.lh = GetPosActual(_lh, AvatarIKGoal.LeftHand);
 
             Vector3 _rh = LocalToWorld(iKB.rh);
             //r.rh = LocalToWorld(iKB.rh);
-            r.rh = GetPosActual(_rh);
+            r.rh = GetPosActual(_rh, AvatarIKGoal.RightHand);
 
             //r.lf = LocalToWorld(iKB.lf);
 
             Vector3 _lf = LocalToWorld(iKB.lf);
 
-            r.lf = GetPosActual(_lf);
+            r.lf = GetPosActual(_lf, AvatarIKGoal.LeftFoot);
 
             //r.rf = LocalToWorld(iKB.rf);
 
             Vector3 _rf = LocalToWorld(iKB.rf);
 
-            r.rf = GetPosActual(_rf);
+            r.rf = GetPosActual(_rf, AvatarIKGoal.RightFoot);
 
             return r;
         }
 
-        Vector3 GetPosActual(Vector3 o)
+        Vector3 GetPosActual(Vector3 o,AvatarIKGoal goal)
         {
             Vector3 r = o;
             Vector3 origin = o;
@@ -164,11 +179,46 @@ namespace Jupiter
 
             origin += -(dir * 0.2f);
             RaycastHit hit;
+            bool ishit = false;
             if(Physics.Raycast(origin,dir, out hit, 1.5f))
             {
                 Vector3 _r = hit.point + (hit.normal * wallOffset);
 
                 r = _r;
+
+                ishit = true;
+
+                if(goal == AvatarIKGoal.LeftFoot ||goal == AvatarIKGoal.RightFoot)
+                {
+                    if (hit.point.y > transform.position.y - 0.1f)
+                    {
+                        ishit = false;
+                    }
+                }
+            }
+
+            if(!ishit)
+            {
+                switch(goal)
+                {
+                    case AvatarIKGoal.LeftFoot:
+                        r = LocalToWorld(iKB.lf);
+                        break;
+                    case AvatarIKGoal.RightFoot:
+                        r = LocalToWorld(iKB.rf);
+                        break;
+                    case AvatarIKGoal.LeftHand:
+                        r = LocalToWorld(iKB.lh);
+                        break;
+                    case AvatarIKGoal.RightHand:
+                        r = LocalToWorld(iKB.rh);
+                        break;
+
+                    default:
+                        break;
+
+                }
+               
             }
             return r;
 
@@ -198,24 +248,36 @@ namespace Jupiter
       
         void SetIKPosition(bool isMid, bool isTrue, Vector3 pos, AvatarIKGoal goal)
         {
-            if(isMid)
+            if (isMid)
             {
+                Vector3 p = GetPosActual(pos, goal);
                 if (isTrue)
                 {
-                    Vector3 p = GetPosActual(pos);
+
                     UpdateIKPosition(goal, p);
 
                 }
                 else
                 {
-                    if(!isTrue)
+                    if(goal == AvatarIKGoal.LeftFoot || goal == AvatarIKGoal.RightFoot)
                     {
-                        Vector3 p = GetPosActual(pos);
-                        UpdateIKPosition(goal, p);
-
+                        if(p.y > transform.position.y -0.25f)
+                        {
+                            UpdateIKPosition(goal, p);
+                        }
                     }
                 }
             }
+            else
+            {
+                if (!isTrue)
+                {
+                    Vector3 p = GetPosActual(pos, goal);
+                    UpdateIKPosition(goal, p);
+
+                }
+            }
+            
         }
         public void UpdateIKPosition(AvatarIKGoal goal, Vector3 pos)
         {
@@ -292,11 +354,13 @@ namespace Jupiter
                 ikState.position = GoalToBodyBones(goal).position;
                 ikState.isSet = true;
             }
+
             ikState.positionWeight = w;
             ikState.position = Vector3.Lerp(ikState.position, tp, delta * lerpSpeed);
             anim.SetIKPositionWeight(goal, ikState.positionWeight);
             anim.SetIKPosition(goal, ikState.position);
         }
+ 
         Transform GoalToBodyBones(AvatarIKGoal goal)
         {
             switch (goal)
@@ -312,7 +376,9 @@ namespace Jupiter
 
                 default:
                 case AvatarIKGoal.RightHand:
-                    return anim.GetBoneTransform(HumanBodyBones.RightHand);                
+                    return anim.GetBoneTransform(HumanBodyBones.RightHand);    
+
+
             }
         }
        
