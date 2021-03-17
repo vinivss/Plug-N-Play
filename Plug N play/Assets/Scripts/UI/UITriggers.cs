@@ -10,14 +10,11 @@ namespace Jupiter
     {
         //public PathCreator RedCar;
 
-        public Racered redcar;
-        GameManager gameManager;
-        public GameObject MaximumOverdrive;
+       public Racered redcar;
+       GameManager gameManager;
+       public GameObject MaximumOverdrive;
         public Slider slider;
         public GameObject Slider;
-        public GameObject CamUSB;
-        public GameObject CamCar;
-
 
 
         void Awake()
@@ -35,8 +32,7 @@ namespace Jupiter
         {
             if (slider.value == 10)
             {
-                CamUSB.SetActive(false);
-                CamCar.SetActive(true);
+
                 gameManager.BlueCarMove = true;
                 Destroy(Slider);
                 Cursor.lockState = CursorLockMode.Locked;
