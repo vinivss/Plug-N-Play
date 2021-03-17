@@ -1000,6 +1000,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: c62f21e4a651c20459a993d37d7cc673, type: 3}
 --- !u!1 &360937700
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of e1555e2 (Finalized warping + cutscene)
 GameObject:
   m_ObjectHideFlags: 0
@@ -1101,6 +1102,8 @@ MeshCollider:
 --- !u!1 &547894561
 =======
 >>>>>>> parent of e1555e2 (Finalized warping + cutscene)
+=======
+>>>>>>> parent of e1555e2 (Finalized warping + cutscene)
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1129,6 +1132,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 1652058192}
   m_Father: {fileID: 196805395}
   m_RootOrder: 19
@@ -1155,10 +1159,15 @@ Animator:
 --- !u!1 &569530919
 =======
 =======
+=======
+>>>>>>> parent of e1555e2 (Finalized warping + cutscene)
   - {fileID: 1128471795}
   m_Father: {fileID: 1129996289}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+>>>>>>> parent of e1555e2 (Finalized warping + cutscene)
+=======
 >>>>>>> parent of e1555e2 (Finalized warping + cutscene)
 --- !u!1001 &369325702
 PrefabInstance:
@@ -1511,6 +1520,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &702603684
 GameObject:
   m_ObjectHideFlags: 0
@@ -1600,6 +1610,9 @@ MeshFilter:
 =======
 --- !u!64 &461713156
 >>>>>>> parent of e1555e2 (Finalized warping + cutscene)
+=======
+--- !u!64 &461713156
+>>>>>>> parent of e1555e2 (Finalized warping + cutscene)
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1607,7 +1620,11 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 702603684}
+=======
+  m_GameObject: {fileID: 461713154}
+>>>>>>> parent of e1555e2 (Finalized warping + cutscene)
 =======
   m_GameObject: {fileID: 461713154}
 >>>>>>> parent of e1555e2 (Finalized warping + cutscene)
@@ -1622,9 +1639,12 @@ MeshCollider:
   m_CookingOptions: 30
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Mesh: {fileID: -8269978462093400991, guid: 79879f03c043c0341bc865af249937b6, type: 3}
 --- !u!1 &744279318
 =======
+=======
+>>>>>>> parent of e1555e2 (Finalized warping + cutscene)
 =======
 >>>>>>> parent of e1555e2 (Finalized warping + cutscene)
   m_Mesh: {fileID: 0}
@@ -4096,6 +4116,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983980648}
   m_Material: {fileID: 0}
+<<<<<<< HEAD
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
@@ -4201,6 +4222,8 @@ MeshCollider:
   m_Mesh: {fileID: -3312513489753615651, guid: 79879f03c043c0341bc865af249937b6, type: 3}
 --- !u!1 &2024881209
 =======
+=======
+>>>>>>> parent of e1555e2 (Finalized warping + cutscene)
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -6098,6 +6121,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 8375319441186427915}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.9332848, y: 3.9891806, z: 24.222448}
@@ -6105,6 +6129,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 196805395}
   m_RootOrder: 8
+=======
+  m_GameObject: {fileID: 1652058191}
+  m_LocalRotation: {x: 0.5004071, y: -0.4899706, z: -0.49007824, w: 0.5189845}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: -1, y: -1, z: -1}
+  m_Children:
+  - {fileID: 1583332840}
+  - {fileID: 1366355827}
+  m_Father: {fileID: 547894562}
+  m_RootOrder: 0
+>>>>>>> parent of e1555e2 (Finalized warping + cutscene)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3457585074084633819
 Transform:
@@ -7385,6 +7420,7 @@ MeshCollider:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1959912435
 <<<<<<< HEAD
+<<<<<<< HEAD
 GameObject:
 >>>>>>> parent of e1555e2 (Finalized warping + cutscene)
   m_ObjectHideFlags: 0
@@ -7408,6 +7444,8 @@ MeshFilter:
   m_GameObject: {fileID: 1808461636576384411}
   m_Mesh: {fileID: -1088279895086047446, guid: 29ee5c04efb01e2438f2fbec0f0859af, type: 3}
 --- !u!1 &7208384238947858797
+=======
+>>>>>>> parent of e1555e2 (Finalized warping + cutscene)
 =======
 >>>>>>> parent of e1555e2 (Finalized warping + cutscene)
 GameObject:
@@ -7483,6 +7521,9 @@ Transform:
   m_GameObject: {fileID: 1972995823}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 35.67, y: 3.64, z: -4.1}
+<<<<<<< HEAD
+>>>>>>> parent of e1555e2 (Finalized warping + cutscene)
+=======
 >>>>>>> parent of e1555e2 (Finalized warping + cutscene)
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
