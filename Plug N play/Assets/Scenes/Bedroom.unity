@@ -999,6 +999,7 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c62f21e4a651c20459a993d37d7cc673, type: 3}
 --- !u!1 &360937700
+<<<<<<< HEAD
 >>>>>>> parent of e1555e2 (Finalized warping + cutscene)
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,6 +1099,8 @@ MeshCollider:
   m_CookingOptions: 30
   m_Mesh: {fileID: -1497600089622399793, guid: 79879f03c043c0341bc865af249937b6, type: 3}
 --- !u!1 &547894561
+=======
+>>>>>>> parent of e1555e2 (Finalized warping + cutscene)
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1125,6 +1128,7 @@ Transform:
   m_LocalPosition: {x: -4.1189995, y: 1.5360003, z: -5.715}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+<<<<<<< HEAD
   - {fileID: 1652058192}
   m_Father: {fileID: 196805395}
   m_RootOrder: 19
@@ -1150,6 +1154,12 @@ Animator:
   m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &569530919
 =======
+=======
+  - {fileID: 1128471795}
+  m_Father: {fileID: 1129996289}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of e1555e2 (Finalized warping + cutscene)
 --- !u!1001 &369325702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1500,6 +1510,7 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &702603684
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,13 +1597,20 @@ MeshFilter:
 =======
 --- !u!64 &461713156
 >>>>>>> parent of e1555e2 (Finalized warping + cutscene)
+=======
+--- !u!64 &461713156
+>>>>>>> parent of e1555e2 (Finalized warping + cutscene)
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 702603684}
+=======
+  m_GameObject: {fileID: 461713154}
+>>>>>>> parent of e1555e2 (Finalized warping + cutscene)
 =======
   m_GameObject: {fileID: 461713154}
 >>>>>>> parent of e1555e2 (Finalized warping + cutscene)
@@ -1603,9 +1621,12 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Mesh: {fileID: -8269978462093400991, guid: 79879f03c043c0341bc865af249937b6, type: 3}
 --- !u!1 &744279318
 =======
+=======
+>>>>>>> parent of e1555e2 (Finalized warping + cutscene)
   m_Mesh: {fileID: 0}
 --- !u!1 &510720213
 >>>>>>> parent of e1555e2 (Finalized warping + cutscene)
@@ -4206,6 +4227,7 @@ CanvasRenderer:
   m_GameObject: {fileID: 760512884}
   m_CullTransparentMesh: 0
 --- !u!1 &785510941
+<<<<<<< HEAD
 >>>>>>> parent of e1555e2 (Finalized warping + cutscene)
 GameObject:
   m_ObjectHideFlags: 0
@@ -4303,6 +4325,8 @@ MeshCollider:
   m_CookingOptions: 30
   m_Mesh: {fileID: 1775275365931487532, guid: df9b663d3c6dc4842843102803eda9fc, type: 3}
 --- !u!1 &2070174306
+=======
+>>>>>>> parent of e1555e2 (Finalized warping + cutscene)
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7360,6 +7384,7 @@ MeshCollider:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1959912435
+<<<<<<< HEAD
 GameObject:
 >>>>>>> parent of e1555e2 (Finalized warping + cutscene)
   m_ObjectHideFlags: 0
@@ -7383,6 +7408,8 @@ MeshFilter:
   m_GameObject: {fileID: 1808461636576384411}
   m_Mesh: {fileID: -1088279895086047446, guid: 29ee5c04efb01e2438f2fbec0f0859af, type: 3}
 --- !u!1 &7208384238947858797
+=======
+>>>>>>> parent of e1555e2 (Finalized warping + cutscene)
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7448,9 +7475,15 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 7001333072615626994}
   m_LocalRotation: {x: 0.044345234, y: 0.42655048, z: 0.89900255, w: -0.08878396}
   m_LocalPosition: {x: -0.642, y: -0.08, z: 0.102}
+=======
+  m_GameObject: {fileID: 1972995823}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 35.67, y: 3.64, z: -4.1}
+>>>>>>> parent of e1555e2 (Finalized warping + cutscene)
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 114567936}
