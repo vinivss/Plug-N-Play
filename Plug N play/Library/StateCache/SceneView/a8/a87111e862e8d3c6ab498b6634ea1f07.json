@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":40.3052978515625,"y":2.7410542964935304,"z":-12.375011444091797},"rotation":{"x":-0.15864045917987824,"y":0.4305979013442993,"z":-0.07712070643901825,"w":-0.8852214217185974},"size":23.25007438659668,"orthographic":false}
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":40.3052978515625,"y":2.7410542964935304,"z":-12.375011444091797},"rotation":{"x":-0.35857534408569338,"y":0.5444194674491882,"z":-0.27641183137893679,"w":-0.7062375545501709},"size":9.640477180480957,"orthographic":false}
@@ -7,3 +8,6 @@
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":40.3052978515625,"y":2.7410542964935304,"z":-12.375011444091797},"rotation":{"x":-0.35857534408569338,"y":0.5444194674491882,"z":-0.27641183137893679,"w":-0.7062375545501709},"size":9.640477180480957,"orthographic":false}
 >>>>>>> parent of e1555e2 (Finalized warping + cutscene)
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":45.59858322143555,"y":12.309125900268555,"z":-9.90612506866455},"rotation":{"x":0.07459142059087753,"y":0.922351598739624,"z":-0.2260289043188095,"w":0.30457210540771487},"size":4.003024101257324,"orthographic":false}
+>>>>>>> ViniProgramming2.0

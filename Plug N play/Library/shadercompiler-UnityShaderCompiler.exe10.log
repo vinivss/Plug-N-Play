@@ -1,4 +1,7 @@
 Base path: 'C:/Unity/2020.1.13f1/Editor/Data', plugins path 'C:/Unity/2020.1.13f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
+<<<<<<< HEAD
 
 Quitting shader compiler process
+=======
+>>>>>>> ViniProgramming2.0
