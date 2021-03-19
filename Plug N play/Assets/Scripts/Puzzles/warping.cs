@@ -11,6 +11,7 @@ namespace Jupiter
         public GameObject USB;
         public GameObject CamUSB;
         public GameObject CamCar;
+        public GameObject Warpingdetection;
 
 
         public void Warp()
@@ -23,6 +24,7 @@ namespace Jupiter
             USB.SetActive(true);
             CamCar.SetActive(false);
             CamUSB.SetActive(true);
+            Destroy(Warpingdetection);
             
         }
 

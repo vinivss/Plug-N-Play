@@ -11,12 +11,13 @@ namespace Jupiter
         //public PathCreator RedCar;
 
         public Racered redcar;
-        GameManager gameManager;
+               GameManager gameManager;
         public GameObject MaximumOverdrive;
         public Slider slider;
         public GameObject Slider;
         public GameObject CamUSB;
         public GameObject CamCar;
+        public GameObject Buttoff;
 
 
 
@@ -41,6 +42,13 @@ namespace Jupiter
                 Destroy(Slider);
                 Cursor.lockState = CursorLockMode.Locked;
             }
+        }
+
+        public void Roomba()
+        {
+            gameManager.RoombaReady = true;
+            Destroy(Buttoff);
+            Cursor.lockState = CursorLockMode.Locked;
         }
     }
 }
