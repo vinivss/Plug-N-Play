@@ -9,15 +9,23 @@ namespace Jupiter
         public GameObject WarpPoint;
         public GameObject Player;
         public GameObject USB;
+        public GameObject CamUSB;
+        public GameObject CamCar;
+        public GameObject Warpingdetection;
 
 
-       public void Warp()
+        public void Warp()
         {
-            USB.SetActive(true);
+            
             Debug.LogError("IN");
             Vector3 warpPos = WarpPoint.transform.position;
-            Debug.Log(warpPos);
-            Player.transform.position = warpPos;
+            
+            USB.transform.position = WarpPoint.transform.position;
+            USB.SetActive(true);
+            CamCar.SetActive(false);
+            CamUSB.SetActive(true);
+            Destroy(Warpingdetection);
+            
         }
 
     
