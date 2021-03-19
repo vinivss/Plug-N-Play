@@ -25,7 +25,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Cutoff: 0.5
-    - _base: 0
+    - _base: 0.001
     - _gloss: -100
     - _intensity: 0.168
     - _metallic: 100
