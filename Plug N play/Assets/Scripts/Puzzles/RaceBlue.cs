@@ -21,7 +21,6 @@ namespace Jupiter
         {
             if (manager.BlueCarMove)
             {
-
                 anim.Play("CarMove");
                 //if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 10f)
                 //{
