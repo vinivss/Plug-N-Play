@@ -88,7 +88,11 @@ namespace Jupiter
             }
             handleMovement();
             handleRotation();
-            handleGrav();
+            if (!controller.isGrounded)
+            {
+                Debug.Log("not grounded");
+                handleGrav();
+            }
         }
         void handleGrav()
         {
