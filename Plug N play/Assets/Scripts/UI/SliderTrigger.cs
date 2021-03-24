@@ -11,19 +11,33 @@ namespace Jupiter
         _3Dcontrols control;
         public GameObject turnonnut;
         public bool isIn;
-
+        public GameObject E;
         private void Awake()
         {
             control = new _3Dcontrols();
             Manager = GameObject.Find("GameManager").GetComponent<GameManager>();
             control.CharacterControls.Pickup.performed += ctx =>
             {
+               
                 if (isIn == true)
                 {
                     turnonnut.SetActive(true);
                     Cursor.lockState = CursorLockMode.None;
                 }
             };
+        }
+
+        private void Update()
+        {
+            if (isIn == true)
+            {
+                E.SetActive(true);
+            }
+
+            else
+            {
+                E.SetActive(false);
+            }
         }
 
         public void OnTriggerEnter(Collider other)

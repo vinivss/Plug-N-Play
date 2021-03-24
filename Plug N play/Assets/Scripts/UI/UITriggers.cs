@@ -27,7 +27,9 @@ namespace Jupiter
         }
        public  void ButtonPress()
         {
-            gameManager.CarReady = true;
+            CamUSB.SetActive(false);
+            CamCar.SetActive(true);
+            gameManager.BlueCarMove = true;
             Destroy(MaximumOverdrive);
             Cursor.lockState = CursorLockMode.Locked;
         }
@@ -36,9 +38,8 @@ namespace Jupiter
         {
             if (slider.value == 10)
             {
-                CamUSB.SetActive(false);
-                CamCar.SetActive(true);
-                gameManager.BlueCarMove = true;
+               
+                gameManager.CarReady = true;
                 Destroy(Slider);
                 Cursor.lockState = CursorLockMode.Locked;
             }
