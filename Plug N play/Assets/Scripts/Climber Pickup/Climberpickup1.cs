@@ -9,6 +9,7 @@ namespace Jupiter
         _3Dcontrols controls;
         GameManager Manager;
         public bool isIn;
+        public GameObject Poof;
         public void Awake()
         {
             controls = new _3Dcontrols();
@@ -19,6 +20,7 @@ namespace Jupiter
             {
                 if (isIn == true)
                 {
+                    Poof.SetActive(true);
                     Manager.Climber = true;
                     Destroy(gameObject);
                 }

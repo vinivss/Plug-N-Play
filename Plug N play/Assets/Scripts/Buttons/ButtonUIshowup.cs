@@ -10,7 +10,7 @@ public class ButtonUIshowup : MonoBehaviour
     public GameManager Manager;
     _3Dcontrols control;
     public GameObject turnonnut;
-
+    public GameObject E;
     bool isIn;
 
     void Awake()
@@ -20,16 +20,29 @@ public class ButtonUIshowup : MonoBehaviour
         control.CharacterControls.Pickup.performed += ctx =>
         {
             if (isIn == true)
+
             {
+               
                 turnonnut.SetActive(true);
                 Cursor.lockState = CursorLockMode.None;
             }
         };
     }
-     void Update()
-    {
-       
-    }
+ 
+
+        private void Update()
+        {
+            if (isIn == true)
+            {
+                E.SetActive(true);
+            }
+
+            else
+            {
+                E.SetActive(false);
+            }
+        }
+    
     public void OnTriggerEnter(Collider other)
     {
         isIn = true;

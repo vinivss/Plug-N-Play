@@ -86,7 +86,7 @@ namespace Jupiter
             helper = new GameObject().transform;
             helper.name = "climb helper";
             a_hook.Init(this, helper);
-            CheckforClimb();
+            //CheckforClimb();
             ignorelayer =~(1 <<8);
         }
 
@@ -95,15 +95,15 @@ namespace Jupiter
            
             Vector3 origin = transform.position;
 
-            origin.y += 2f;
+            origin.y += 0.2f;
 
             Vector3 dir = transform.forward;
 
             RaycastHit hit;
             //Debugline.singleton.SetLine(origin, dir+ origin, 5);
-            if (Physics.Raycast(origin, dir, out hit, 1))
+            if (Physics.Raycast(origin, dir, out hit, 1.4f, ignorelayer))
             {
-                Debug.LogError("fuuck");
+               
                 helper.position = PosWithOffset(origin, hit.point);
                 InitForclimb(hit);
                 return true;
@@ -210,7 +210,7 @@ namespace Jupiter
 
                 transform.rotation = Quaternion.Slerp(transform.rotation, helper.rotation, delta * rotateSpeed);
 
-                LookForGround();
+                //LookForGround();
             }
         }
 
@@ -320,7 +320,7 @@ namespace Jupiter
             RaycastHit hit;
 
             Debugline.singleton.SetLine(Origin, Dir, 1);
-            if(Physics.Raycast(Origin,Dir,out hit, 1.2f, ignorelayer))
+            if(Physics.Raycast(Origin,Dir,out hit, 0.01f, ignorelayer))
             {
                 
                 a_hook.enabled = false;
