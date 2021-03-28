@@ -23,6 +23,8 @@ namespace Jupiter
                     Poof.SetActive(true);
                     Manager.Climber = true;
                     Destroy(gameObject);
+                 
+
                 }
             };
         }

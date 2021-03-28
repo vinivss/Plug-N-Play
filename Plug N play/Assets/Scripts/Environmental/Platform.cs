@@ -5,16 +5,22 @@ using UnityEngine;
 public class Platform : MonoBehaviour
 {
     public GameObject Player;
+    //public GameObject platform;
 
-    private void OnTriggerStay(Collider other)
+
+    private void OnTriggerEnter(Collider other)
     {
-        Debug.LogError("Hell");
-        other.transform.parent = gameObject.transform;
+        if (other.gameObject.tag == "Player")
+            Debug.LogWarning("Hell");
+        other.transform.parent = transform;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        Debug.LogError("Hell");
-        other.transform.parent = transform;
+        if (other.gameObject.tag == "Player")
+        {
+            Debug.LogWarning("Hell no");
+            Player.transform.parent = null;
+        }
     }
 }

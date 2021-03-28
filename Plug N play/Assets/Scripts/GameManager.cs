@@ -12,5 +12,6 @@ public class GameManager : MonoBehaviour
     public bool Slider;
     public bool BlueCarMove;
     public bool RoombaReady;
+    public int CoinCount;
 
 }

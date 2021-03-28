@@ -67,8 +67,8 @@ namespace Jupiter
             input.CharacterControls.Movement.performed += ctx =>
             {
                 currentMove = ctx.ReadValue<Vector2>();
-            //Debug.Log(currentMove);
-            movementPressed = currentMove.x != 0 || currentMove.y != 0;
+                    //Debug.Log(currentMove);
+                    movementPressed = currentMove.x != 0 || currentMove.y != 0;
 
 
 
@@ -83,6 +83,7 @@ namespace Jupiter
 
         void Init()
         {
+           
             helper = new GameObject().transform;
             helper.name = "climb helper";
             a_hook.Init(this, helper);
@@ -101,7 +102,7 @@ namespace Jupiter
 
             RaycastHit hit;
             //Debugline.singleton.SetLine(origin, dir+ origin, 5);
-            if (Physics.Raycast(origin, dir, out hit, 1.4f, ignorelayer))
+            if (Physics.Raycast(origin, dir, out hit, 1.5f, ignorelayer))
             {
                
                 helper.position = PosWithOffset(origin, hit.point);
@@ -113,6 +114,9 @@ namespace Jupiter
 
         void InitForclimb(RaycastHit hit)
         {
+
+          
+
             isClimbing = true;
             a_hook.enabled = true;
 
@@ -210,7 +214,7 @@ namespace Jupiter
 
                 transform.rotation = Quaternion.Slerp(transform.rotation, helper.rotation, delta * rotateSpeed);
 
-                //LookForGround();
+                LookForGround();
             }
         }
 
@@ -320,12 +324,15 @@ namespace Jupiter
             RaycastHit hit;
 
             Debugline.singleton.SetLine(Origin, Dir, 1);
-            if(Physics.Raycast(Origin,Dir,out hit, 0.01f, ignorelayer))
+            if(Physics.Raycast(Origin,Dir,out hit, raytomovedir , ignorelayer))
             {
-                
-                a_hook.enabled = false;
+                Debug.LogWarning("Touch ass");
                 isClimbing = false;
-       
+                //control.isClimbing = false;
+                a_hook.enabled = false;
+
+                //OnDisable();
+
                 control.OpenController();
              
 

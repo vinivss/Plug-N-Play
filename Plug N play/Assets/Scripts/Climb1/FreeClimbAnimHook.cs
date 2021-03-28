@@ -129,11 +129,11 @@ namespace Jupiter
                         }
                         else
                         {
-                            isMirror = (moveDir.x<0) ;
+                            isMirror = (moveDir.x < 0) ;
                             anim.SetBool("ismirror", isMirror);
                         }
                     }
-                    anim.CrossFade("climb_up", 0.2f);
+                    anim.CrossFade("climb_up",0.2f);
 
                 }
 

@@ -14,6 +14,7 @@ namespace Jupiter
        Vector3 Playerlocation;
        public bool totem0 = true;
        public bool totem1 = false;
+        public PlayerControl player;
 
 
         // Start is called before the first frame update
@@ -42,7 +43,7 @@ namespace Jupiter
             if (Manager.Climber)
             {
                 Vector3 Getlocation = Totem0.transform.position;
-
+                
                 Totem1.transform.position = Getlocation;
 
                 totem1 = true;
@@ -50,10 +51,8 @@ namespace Jupiter
                 Cam1.SetActive(true);
                 Totem0.SetActive(false);
                 Totem1.SetActive(true);
-
+                player.StartCoroutine(player.FreezeMovement(3));
             }
-
-
         }
     }
 }
