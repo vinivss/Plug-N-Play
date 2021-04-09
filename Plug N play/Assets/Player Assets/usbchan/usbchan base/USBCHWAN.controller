@@ -14,13 +14,13 @@ AnimatorStateMachine:
     m_Position: {x: 200, y: 150, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1614381923353311417}
-    m_Position: {x: 640, y: 160, z: 0}
+    m_Position: {x: 670, y: 290, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2133441923982619153}
-    m_Position: {x: 640, y: 220, z: 0}
+    m_Position: {x: 670, y: 330, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2874812588683591837}
-    m_Position: {x: 430, y: 110, z: 0}
+    m_Position: {x: 420, y: 110, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -105,6 +105,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
+  - m_Name: GravityWeight
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -157,7 +163,7 @@ AnimatorState:
   m_Transitions: []
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
+  m_IKOnFeet: 1
   m_WriteDefaultValues: 1
   m_Mirror: 0
   m_SpeedParameterActive: 0

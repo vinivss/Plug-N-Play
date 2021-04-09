@@ -25,12 +25,12 @@ namespace Jupiter
         float savedTime;
         bool climbOff;
         float climbTimer;
-        public  Rigidbody rigid;
-        public float acceleration = 1000.0f;
+        public Rigidbody rigid;
+        public float acceleration = 1.0f;
         float velocityZ = 0.0f;
         float velocityX = 0.0f;
         int VelocityHash;
-        public float deceleration = 1000.0f;
+        public float deceleration = 1.0f;
         public float maximumVelocity = 0.5f;
 
         int VelocityZHash;
@@ -52,7 +52,7 @@ namespace Jupiter
             };
 
             //freeClimb = GetComponent<FreeClimb>();
-            rigid = GetComponent<Rigidbody>();
+            //rigid = GetComponent<Rigidbody>();
             anim = GetComponent<Animator>();
             isWalkingHash = Animator.StringToHash("isWalking");
             isRunningHash = Animator.StringToHash("isRunning");
@@ -70,7 +70,7 @@ namespace Jupiter
         // Update is called once per frame
         void Update()
         {
-            Debug.LogError(currentMove);
+            //Debug.LogError(currentMove);
           
            
 
@@ -94,8 +94,8 @@ namespace Jupiter
                     return;
                 }
 
-                if (!controller.isGrounded)
-                {
+                //if (!controller.isGrounded)
+                //{
                     if (!climbOff)
                     {
                         isClimbing = freeClimb.CheckforClimb();
@@ -105,7 +105,7 @@ namespace Jupiter
 
                             CloseController();
                         }
-                    }
+                    //}
                 }
             }
                 if (climbOff)
@@ -118,17 +118,18 @@ namespace Jupiter
                 handleMovement();
                 LockorResetVelocity();
                 //handleRotation();
-                if (!controller.isGrounded)
-                {
+                //if (!controller.isGrounded)
+                //{
                     if (!isClimbing)
                     {
                     handleGrav();
-                    }
+                //}
                 }
             }
         
         void handleGrav()
         {
+            Debug.Log("called");
             playerVelocity.y += gravVal * Time.deltaTime;
             controller.Move(playerVelocity * Time.deltaTime);
         }
@@ -147,7 +148,7 @@ namespace Jupiter
             //{
             //    anim.SetBool(isWalkingHash, false);
             //}
-            if (currentMove.y > 0.0f && velocityZ <maximumVelocity)
+            if (currentMove.y > 0.0f && velocityZ < maximumVelocity)
             {
                 //Debug.LogError("CallForward");
                 
@@ -228,10 +229,11 @@ namespace Jupiter
         public void CloseController()
         {
             OnDisable();
-            rigid.isKinematic = true;
-            //isClimbing = false;
+
+
             controller.enabled = false;
-            //anim.enabled = false;
+            anim.enabled = false;
+            //anim.applyRootMotion = false;
         }
 
         public void OpenController()
@@ -242,8 +244,8 @@ namespace Jupiter
             rigid.isKinematic = false;
             controller.enabled = true;
             isClimbing = false;
-            //anim.enabled = true;
-
+            anim.enabled = true;
+            //anim.applyRootMotion = true;
             climbOff = true;
             climbTimer = Time.realtimeSinceStartup;
         }

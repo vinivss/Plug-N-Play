@@ -102,7 +102,7 @@ namespace Jupiter
 
             RaycastHit hit;
             //Debugline.singleton.SetLine(origin, dir+ origin, 5);
-            if (Physics.Raycast(origin, dir, out hit, 1.5f, ignorelayer))
+            if (Physics.Raycast(origin, dir, out hit, 0.3f, ignorelayer))
             {
                
                 helper.position = PosWithOffset(origin, hit.point);
