@@ -33,6 +33,7 @@ namespace Jupiter
         public float deceleration = 1.0f;
         public float maximumVelocity = 0.5f;
 
+
         int VelocityZHash;
         int VelocityXHash;
         void Awake()
@@ -229,10 +230,10 @@ namespace Jupiter
         public void CloseController()
         {
             OnDisable();
-
-
-            controller.enabled = false;
-            anim.enabled = false;
+            //freeClimb.a_hook.enabled = true;
+            rigid.isKinematic = true;
+            //controller.enabled = false;
+            //anim.enabled = false;
             //anim.applyRootMotion = false;
         }
 
@@ -240,11 +241,11 @@ namespace Jupiter
         {
             
             OnEnable();
-            anim.CrossFade("Idle",0.2f);
+            anim.CrossFade("MovementBlend Tree",0.2f);
             rigid.isKinematic = false;
-            controller.enabled = true;
+            //controller.enabled = true;
             isClimbing = false;
-            anim.enabled = true;
+            //anim.enabled = true;
             //anim.applyRootMotion = true;
             climbOff = true;
             climbTimer = Time.realtimeSinceStartup;
