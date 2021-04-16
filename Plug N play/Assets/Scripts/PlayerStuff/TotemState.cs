@@ -26,33 +26,33 @@ namespace Jupiter
         // Update is called once per frame
         void Update()
         {
-           if(totem0)
-            {
+           //if(totem0)
+           // {
 
-               Playerlocation = Totem0.transform.position;
-            }
+           //    Playerlocation = Totem0.transform.position;
+           // }
 
 
-           if(totem1)
-            {
-               Playerlocation = Totem1.transform.position;
-            }
+           //if(totem1)
+           // {
+           //    Playerlocation = Totem1.transform.position;
+           // }
 
-            playerManager.transform.position = Playerlocation;
+           // playerManager.transform.position = Playerlocation;
 
-            if (Manager.Climber)
-            {
-                Vector3 Getlocation = Totem0.transform.position;
+            //if (Manager.Climber)
+            //{
+            //    Vector3 Getlocation = Totem0.transform.position;
                 
-                Totem1.transform.position = Getlocation;
+            //    Totem1.transform.position = Getlocation;
 
-                totem1 = true;
-                Cam0.SetActive(false);
-                Cam1.SetActive(true);
-                Totem0.SetActive(false);
-                Totem1.SetActive(true);
-                player.StartCoroutine(player.FreezeMovement(3));
-            }
+            //    totem1 = true;
+            //    Cam0.SetActive(false);
+            //    Cam1.SetActive(true);
+            //    Totem0.SetActive(false);
+            //    Totem1.SetActive(true);
+            //    player.StartCoroutine(player.FreezeMovement(3));
+            //}
         }
     }
 }

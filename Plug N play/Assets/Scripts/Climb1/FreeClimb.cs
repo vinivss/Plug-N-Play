@@ -115,8 +115,8 @@ namespace Jupiter
         void InitForclimb(RaycastHit hit)
         {
 
-          
 
+            OnEnable();
             isClimbing = true;
             a_hook.enabled = true;
 
@@ -327,11 +327,14 @@ namespace Jupiter
             if(Physics.Raycast(Origin,Dir,out hit, raytomovedir , ignorelayer))
             {
                 Debug.LogWarning("Touch ass");
+                //a_hook.enabled = false;
                 isClimbing = false;
+                currentMove.x = 0f;
+                currentMove.y = 0f;
                 //control.isClimbing = false;
-                a_hook.enabled = false;
+               
 
-                //OnDisable();
+                OnDisable();
 
                 control.OpenController();
              
