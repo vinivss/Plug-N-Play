@@ -278,7 +278,7 @@ namespace Jupiter
 
             //cast towards wall
             Debugline.singleton.SetLine(origin, origin + (dir * dis2), 1);
-           // Debug.DrawRay(origin, dir * dis2, Color.green);
+            Debug.DrawRay(origin, dir * dis2, Color.green);
 
             if (Physics.Raycast(origin, dir, out hit, dis2))
             {
@@ -302,7 +302,7 @@ namespace Jupiter
 
             dir = -Vector3.up;
             Debugline.singleton.SetLine(origin, origin + dir , 2);
-            //Debug.DrawRay(origin, dir, Color.blue);
+            Debug.DrawRay(origin, dir, Color.blue);
 
             if (Physics.Raycast(origin, dir, out hit, dis2))
             {
@@ -327,7 +327,7 @@ namespace Jupiter
             if(Physics.Raycast(Origin,Dir,out hit, raytomovedir , ignorelayer))
             {
                 Debug.LogWarning("Touch ass");
-                //a_hook.enabled = false;
+                a_hook.enabled = false;
                 isClimbing = false;
                 currentMove.x = 0f;
                 currentMove.y = 0f;

@@ -27,6 +27,7 @@ namespace Jupiter
         }
        public  void ButtonPress()
         {
+            Debug.LogAssertionFormat("CameraCalledProperly");
             CamUSB.SetActive(false);
             CamCar.SetActive(true);
             gameManager.BlueCarMove = true;

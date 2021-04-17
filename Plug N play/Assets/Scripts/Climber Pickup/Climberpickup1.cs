@@ -10,6 +10,7 @@ namespace Jupiter
         GameManager Manager;
         public bool isIn;
         public GameObject Poof;
+        public TotemState Totem;
         public void Awake()
         {
             controls = new _3Dcontrols();
@@ -22,7 +23,9 @@ namespace Jupiter
                 {
                     Poof.SetActive(true);
                     Manager.Climber = true;
+                    Totem.ChangeStateClimb();
                     Destroy(gameObject);
+                   
                  
 
                 }

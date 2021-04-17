@@ -63,7 +63,7 @@ namespace Jupiter
             VelocityZHash = Animator.StringToHash("VelocityZ");
             VelocityXHash = Animator.StringToHash("VelocityX");
 
-            canClimb = manager.Climber;
+            
             
         }
 
@@ -71,9 +71,10 @@ namespace Jupiter
         // Update is called once per frame
         void Update()
         {
+            canClimb = manager.Climber;
             //Debug.LogError(currentMove);
-          
-           
+
+
 
 
             //input.CharacterControls.Movement.performed += ctx =>
@@ -130,9 +131,9 @@ namespace Jupiter
         
         void handleGrav()
         {
-            Debug.Log("called");
+
             playerVelocity.y += gravVal * Time.deltaTime;
-            controller.Move(playerVelocity * Time.deltaTime);
+            //controller.Move(playerVelocity * Time.deltaTime);
         }
         void handleMovement()
         {
@@ -241,6 +242,8 @@ namespace Jupiter
         {
             
             OnEnable();
+            velocityX = 0.0f;
+            velocityZ = 0.0f;
             anim.CrossFade("MovementBlend Tree",0.2f);
             rigid.isKinematic = false;
             //controller.enabled = true;
