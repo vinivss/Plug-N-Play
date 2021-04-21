@@ -12,7 +12,6 @@ namespace Jupiter
         int isWalkingHash;
         int isRunningHash;
         Transform cameraMain;
-        public CharacterController controller;
         bool canClimb;
         public bool isClimbing;
         public FreeClimb freeClimb;
@@ -124,15 +123,16 @@ namespace Jupiter
                 //{
                     if (!isClimbing)
                     {
-                    handleGrav();
-                //}
-                }
+                    //handleGrav();
+                
+                    }
             }
         
         void handleGrav()
         {
 
-            playerVelocity.y += gravVal * Time.deltaTime;
+            //playerVelocity.y += gravVal * Time.deltaTime;
+            //rigid.velocity = playerVelocity;
             //controller.Move(playerVelocity * Time.deltaTime);
         }
         void handleMovement()

@@ -9,12 +9,14 @@ namespace Jupiter
        public GameObject playerManager;
        public GameObject Totem0;
        public GameObject Totem1;
-      
+       public GameObject Totem2;
        Vector3 Playerlocation;
        public bool totem0 = true;
        public bool totem1 = false;
+       public bool totem2 = false;
+
        public PlayerControl player;
-        public FreeClimb FC;
+       public FreeClimb FC;
 
 
         // Start is called before the first frame update
@@ -31,33 +33,19 @@ namespace Jupiter
 
         public void ChangeStateClimb()
         {
-            //if(totem0)
-            // {
-
-            //    Playerlocation = Totem0.transform.position;
-            // }
-
-
-            //if(totem1)
-            // {
-            //    Playerlocation = Totem1.transform.position;
-            // }
-
-            // playerManager.transform.position = Playerlocation;
-
-            //if (Manager.Climber)
-            //{
-            Vector3 Getlocation = Totem0.transform.position;
-
-            Totem1.transform.position = Getlocation;
 
             totem1 = true;
-            //Cam0.SetActive(false);
-            //Cam1.SetActive(true);
-            //Totem0.SetActive(false);
             Totem1.SetActive(true);
             player.StartCoroutine(player.FreezeMovement(3));
-            //}
+          
+        }
+
+        public void ChangeStateUSBC()
+        {
+            totem2 = true;
+            Totem2.SetActive(true);
+            player.StartCoroutine(player.FreezeMovement(3));
+
         }
     }
 }

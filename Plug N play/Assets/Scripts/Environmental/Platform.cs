@@ -6,21 +6,23 @@ public class Platform : MonoBehaviour
 {
     public GameObject Player;
     //public GameObject platform;
+   
 
-
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Player")
-            Debug.LogWarning("Hell");
-        other.transform.parent = transform;
+        {
+            Debug.LogWarning(other.name);
+           Player.transform.parent = transform;
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Player")
-        {
+       
             Debug.LogWarning("Hell no");
-            Player.transform.parent = null;
-        }
+        Player.transform.parent = null;
+      
+
     }
 }

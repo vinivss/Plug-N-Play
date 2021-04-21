@@ -4,6 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Bedroom.unity
+    guid: 2601b5412bb895b498570df124a79fcc
+  - enabled: 1
+    path: Assets/Scenes/Whackamole.unity
+    guid: ea192d6386dcd724bbc560da1958be44
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 0e10f918963c56a4cbcef8ee748b141a, type: 2}
