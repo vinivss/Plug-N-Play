@@ -5408,7 +5408,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1755201124}
-  m_LocalRotation: {x: -0.013059641, y: 0.98670983, z: -0.103287466, w: -0.12475933}
+  m_LocalRotation: {x: -0.013059648, y: 0.98670983, z: -0.103287466, w: -0.12475939}
   m_LocalPosition: {x: 51.0456, y: 9.805464, z: -10.156883}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -13841,7 +13841,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1284591342207862282}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.333, z: 0}
+  m_LocalPosition: {x: 0, y: 0.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1610442004299185466}
@@ -13871,8 +13871,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.92189837
-  m_Center: {x: 0, y: -0.42189834, z: 0}
+  m_Radius: 0.46010205
+  m_Center: {x: 0, y: 0.039897956, z: 0}
 --- !u!136 &1284591342265091017
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -17516,7 +17516,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4084381583895715230}
-  m_LocalRotation: {x: -0.010794178, y: 0.98842126, z: -0.08537011, w: -0.124975786}
+  m_LocalRotation: {x: -0.010794175, y: 0.98842126, z: -0.08537011, w: -0.12497575}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -17864,7 +17864,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4084381585097926146}
-  m_LocalRotation: {x: -0.013059642, y: 0.98670983, z: -0.10328747, w: -0.12475936}
+  m_LocalRotation: {x: -0.013059647, y: 0.98670983, z: -0.10328747, w: -0.12475939}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -17885,7 +17885,7 @@ GameObject:
   - component: {fileID: 4084381585167811935}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
