@@ -25,6 +25,7 @@ namespace Squid
         void Start()
         {
             manager = GameObject.Find("GameManager").GetComponent<GameManager>();
+            Cursor.lockState = CursorLockMode.None;
             
         }
 
@@ -118,6 +119,7 @@ namespace Squid
             
             if (winTime <= 0.0f)
             {
+                Cursor.lockState = CursorLockMode.Locked;
 
                 manager.RoombaReady = true;
 

@@ -31,6 +31,7 @@ namespace Jupiter
         int VelocityHash;
         public float deceleration = 1.0f;
         public float maximumVelocity = 0.5f;
+        public GameObject checkground;
 
 
         int VelocityZHash;
@@ -233,6 +234,8 @@ namespace Jupiter
             OnDisable();
             //freeClimb.a_hook.enabled = true;
             rigid.isKinematic = true;
+            checkground.SetActive(false);
+            rigid.useGravity = false;
             //controller.enabled = false;
             //anim.enabled = false;
             //anim.applyRootMotion = false;
@@ -246,12 +249,15 @@ namespace Jupiter
             velocityZ = 0.0f;
             anim.CrossFade("MovementBlend Tree",0.2f);
             rigid.isKinematic = false;
+            
+            
             //controller.enabled = true;
             isClimbing = false;
             //anim.enabled = true;
             //anim.applyRootMotion = true;
             climbOff = true;
             climbTimer = Time.realtimeSinceStartup;
+            checkground.SetActive(true);
         }
 
       public IEnumerator FreezeMovement(float time)

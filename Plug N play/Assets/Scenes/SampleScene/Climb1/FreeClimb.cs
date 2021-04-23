@@ -279,7 +279,7 @@ namespace Jupiter
             //cast towards wall
             Debugline.singleton.SetLine(origin, origin + (dir * dis2), 1);
             Debug.DrawRay(origin, dir * dis2, Color.green);
-
+            
             if (Physics.Raycast(origin, dir, out hit, dis2))
             {
                 //Debug.Log("Hit");
@@ -303,7 +303,7 @@ namespace Jupiter
             dir = -Vector3.up;
             Debugline.singleton.SetLine(origin, origin + dir , 2);
             Debug.DrawRay(origin, dir, Color.blue);
-
+            Debugline.singleton.SetLine(origin, origin + (dir * dis), 3);
             if (Physics.Raycast(origin, dir, out hit, dis2))
             {
                 float angle = Vector3.Angle(-helper.forward, hit.normal);

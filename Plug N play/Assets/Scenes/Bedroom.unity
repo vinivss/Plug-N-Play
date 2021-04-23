@@ -13940,7 +13940,7 @@ MonoBehaviour:
   speed_multiplier: 0.2
   climbSpeed: 7
   angledist: 2
-  raytomovedir: 0.2
+  raytomovedir: 0.05
   rotateSpeed: 5
   baseiKSnap:
     rh: {x: 2, y: 5, z: 0.5}
@@ -13970,6 +13970,7 @@ MonoBehaviour:
   acceleration: 1
   deceleration: 1
   maximumVelocity: 0.5
+  checkground: {fileID: 1284591342207862282}
 --- !u!1 &1284591342968115556
 GameObject:
   m_ObjectHideFlags: 0
@@ -17516,7 +17517,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4084381583895715230}
-  m_LocalRotation: {x: -0.010794175, y: 0.98842126, z: -0.08537011, w: -0.12497575}
+  m_LocalRotation: {x: -0.010794178, y: 0.98842126, z: -0.08537011, w: -0.124975786}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -17742,7 +17743,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4084381584930587840}
-  m_LocalRotation: {x: -0.0153267905, y: 0.98466784, z: -0.12121812, w: -0.124501176}
+  m_LocalRotation: {x: -0.015326798, y: 0.98466784, z: -0.121218145, w: -0.124501206}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
