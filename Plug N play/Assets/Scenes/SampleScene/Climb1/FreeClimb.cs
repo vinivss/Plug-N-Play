@@ -88,7 +88,7 @@ namespace Jupiter
             helper.name = "climb helper";
             a_hook.Init(this, helper);
             //CheckforClimb();
-            ignorelayer =~(1 <<8);
+            ignorelayer = ~(0 <<8);
         }
 
         public bool CheckforClimb()
@@ -102,7 +102,7 @@ namespace Jupiter
 
             RaycastHit hit;
             //Debugline.singleton.SetLine(origin, dir+ origin, 5);
-            if (Physics.Raycast(origin, dir, out hit, 0.3f, ignorelayer))
+            if (Physics.Raycast(origin, dir, out hit, 0.2f, ignorelayer))
             {
                
                 helper.position = PosWithOffset(origin, hit.point);
@@ -263,12 +263,12 @@ namespace Jupiter
             //Raycast towards the direction you want to move
             RaycastHit hit;
 
-            if (Physics.Raycast(origin, dir, out hit, dis))
-            {
-                // check if its a corner
-                //Debug.LogError("Shit");
-                return false;
-            }
+            //if (Physics.Raycast(origin, dir, out hit, dis))
+            //{
+            //    // check if its a corner
+            //    Debug.LogError("Shit");
+            //    return false;
+            //}
 
             origin += moveDir * dis;
 
@@ -277,8 +277,8 @@ namespace Jupiter
             float dis2 = angledist;
 
             //cast towards wall
-            Debugline.singleton.SetLine(origin, origin + (dir * dis2), 1);
-            Debug.DrawRay(origin, dir * dis2, Color.green);
+            Debugline.singleton.SetLine(origin,  (dir * dis2), 1);
+            Debug.DrawRay(origin, dir * dis2 , Color.green);
             
             if (Physics.Raycast(origin, dir, out hit, dis2))
             {

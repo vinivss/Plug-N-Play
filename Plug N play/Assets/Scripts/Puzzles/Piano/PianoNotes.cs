@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 namespace Squid
 {
    public enum enPiano { C,D,E,F,G,A,B,C1,D1,E1,F1,CS,DS,FS,GS,Bb,CS1,DS1};
@@ -25,14 +25,22 @@ namespace Squid
         public AudioSource bb;
         public AudioSource cs1;
         public AudioSource ds1;
+        public int noteGuess;
+        public int timeskeypress;
+        bool win = false;
+        public GameObject WinScreen;
+        float winTime = 5.0f;
+        GameManager manager;
         enPiano piano;
 
-        public void Awake()
+        public void Start()
         {
-            
-         }
+            manager = GameObject.Find("GameManager").GetComponent<GameManager>();
+            Cursor.lockState = CursorLockMode.None;
+        }
         public void playPiano(enPiano note)
         {
+
             switch (note)
             {
                 case enPiano.C:
@@ -143,104 +151,117 @@ namespace Squid
                         break;
 
                     }
-
-
-
             }
-
         }
 
+        public void Win()
+        {
+            Time.timeScale = 1.0f;
+
+            WinScreen.SetActive(true);
+
+
+
+            if (winTime <= 0.0f)
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+
+                manager.RoombaReady = true;
+
+                SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("Piano"));
+            }
+        }
         public void Cplay()
         {
             c.Play();
-            piano = enPiano.C;
+            playPiano(enPiano.C);
         }
 
         public void Dplay()
         {
             d.Play();
-            piano = enPiano.D;
+            playPiano(enPiano.D);
         }
         public void Eplay()
         {
             e.Play();
-            piano = enPiano.E;
+            playPiano(enPiano.E);
         }
         public void Fplay()
         {
             f.Play();
-            piano = enPiano.F;
+            playPiano(enPiano.F);
         }
         public void Gplay()
         {
             g.Play();
-            piano = enPiano.G;
+            playPiano(enPiano.G); 
         }
         public void Aplay()
         {
             a.Play();
-            piano = enPiano.A;
+            playPiano(enPiano.A);
         }
         public void Bplay()
         {
             b.Play();
-            piano = enPiano.B;
+            playPiano(enPiano.B);
         }
         public void C1play()
         {
             c1.Play();
-            piano = enPiano.C1;
+            playPiano(enPiano.C1);
         }
       
         public void D1()
         {
             d1.Play();
-            piano = enPiano.D1;
+            playPiano(enPiano.D1);
         }
         public void E1play()
         {
             e1.Play();
-            piano = enPiano.E1;
+            playPiano(enPiano.E1);
         }
         public void F1play()
         {
             f1.Play();
-            piano = enPiano.F1;
+            playPiano(enPiano.F1);
         }
         public void Csplay()
         {
             cs.Play();
-            piano = enPiano.CS;
+            playPiano(enPiano.CS);
         }
         public void Dsplay()
         {
-            d.Play();
-            piano = enPiano.DS;
+            ds.Play();
+            playPiano(enPiano.DS);
         }
         public void Fsplay()
         {
             fs.Play();
-            piano = enPiano.FS;
+            playPiano(enPiano.FS);
         }
         public void Gsplay()
         {
             gs.Play();
-            piano = enPiano.GS;
+            playPiano(enPiano.GS);
         }
         public void bbplay()
         {
             bb.Play();
-            piano = enPiano.Bb;
+            playPiano(enPiano.Bb);
         }
         public void Cs1play()
         {
             cs1.Play();
-            piano = enPiano.CS1;
+            playPiano(enPiano.CS1);
         }
         public void Ds1play()
         {
             ds1.Play();
-            piano = enPiano.DS1;
+            playPiano(enPiano.DS1);
         }
 
     }

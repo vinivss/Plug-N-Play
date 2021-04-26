@@ -378,7 +378,7 @@ GameObject:
   - component: {fileID: 226309780}
   - component: {fileID: 226309779}
   - component: {fileID: 226309778}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: drawer_table_climbable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -397,7 +397,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1092343842}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &226309778
 BoxCollider:
@@ -585,7 +585,7 @@ GameObject:
   - component: {fileID: 279834269}
   - component: {fileID: 279834268}
   - component: {fileID: 279834267}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: shelf_climbable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -604,7 +604,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1092343842}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -45.167, z: 0}
 --- !u!65 &279834267
 BoxCollider:
@@ -1672,6 +1672,92 @@ Transform:
   m_Father: {fileID: 196805395}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &635227245
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 635227246}
+  - component: {fileID: 635227250}
+  - component: {fileID: 635227249}
+  - component: {fileID: 635227248}
+  - component: {fileID: 635227247}
+  m_Layer: 9
+  m_Name: ShoeBoxColliders
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &635227246
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635227245}
+  m_LocalRotation: {x: -0, y: 0.38603374, z: -0, w: 0.9224847}
+  m_LocalPosition: {x: 10.887306, y: -6.3126817, z: -6.9705753}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1092343842}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &635227247
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635227245}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.056221962, y: 0.79109275, z: 0.42678243}
+  m_Center: {x: 1.1143639, y: 0.3545751, z: -0.78521395}
+--- !u!65 &635227248
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635227245}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06172037, y: 0.79109275, z: 1.8483295}
+  m_Center: {x: -1.8305428, y: 0.3545751, z: -0.13942923}
+--- !u!65 &635227249
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635227245}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.0038376, y: 0.79109275, z: 0.062025905}
+  m_Center: {x: -0.35949427, y: 0.3545751, z: -1.0322286}
+--- !u!65 &635227250
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635227245}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.0038376, y: 0.79109275, z: 0.06379539}
+  m_Center: {x: -0.35949323, y: 0.3545751, z: 0.75284886}
 --- !u!1 &637079521
 GameObject:
   m_ObjectHideFlags: 0
@@ -1757,7 +1843,7 @@ GameObject:
   - component: {fileID: 639134855}
   - component: {fileID: 639134854}
   - component: {fileID: 639134853}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: chalkboard_shelf_climbable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1777,7 +1863,7 @@ Transform:
   m_Children:
   - {fileID: 1230456099}
   m_Father: {fileID: 1092343842}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &639134853
 BoxCollider:
@@ -2039,7 +2125,7 @@ GameObject:
   - component: {fileID: 666545119}
   - component: {fileID: 666545118}
   - component: {fileID: 666545117}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: bedframe_climbable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2058,7 +2144,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1092343842}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &666545117
 BoxCollider:
@@ -2533,7 +2619,7 @@ GameObject:
   m_Component:
   - component: {fileID: 758270700}
   - component: {fileID: 758270701}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: mattress_climbable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2552,7 +2638,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1092343842}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &758270701
 BoxCollider:
@@ -3767,7 +3853,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1092343842}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Climable Surface Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3785,6 +3871,7 @@ Transform:
   m_LocalPosition: {x: 35.4, y: 9.805464, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 635227246}
   - {fileID: 1773920369}
   - {fileID: 639134852}
   - {fileID: 1616666549}
@@ -4330,7 +4417,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1230456099}
   - component: {fileID: 1230456100}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: chalkboard_backing_climbable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5322,7 +5409,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1616666549}
   - component: {fileID: 1616666550}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: firetruck_climbable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5343,7 +5430,7 @@ Transform:
   - {fileID: 1866752779}
   - {fileID: 1641751614}
   m_Father: {fileID: 1092343842}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 25.482, z: 0}
 --- !u!65 &1616666550
 BoxCollider:
@@ -5423,7 +5510,7 @@ GameObject:
   - component: {fileID: 1641751617}
   - component: {fileID: 1641751616}
   - component: {fileID: 1641751615}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MICRO_port_blue_firetruck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6004,7 +6091,7 @@ GameObject:
   - component: {fileID: 1711387807}
   - component: {fileID: 1711387806}
   - component: {fileID: 1711387805}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: chair_climbable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6023,7 +6110,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1092343842}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -195, z: 0}
 --- !u!64 &1711387805
 MeshCollider:
@@ -6358,7 +6445,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1755201124}
-  m_LocalRotation: {x: -0.013059641, y: 0.98670983, z: -0.103287466, w: -0.12475933}
+  m_LocalRotation: {x: -0.013059648, y: 0.98670983, z: -0.103287466, w: -0.12475939}
   m_LocalPosition: {x: 51.0456, y: 9.805464, z: -10.156883}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -6426,7 +6513,7 @@ GameObject:
   - component: {fileID: 1773920372}
   - component: {fileID: 1773920371}
   - component: {fileID: 1773920370}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: bedroom_walls_climbable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6445,7 +6532,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1092343842}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1773920370
 BoxCollider:
@@ -8792,7 +8879,7 @@ BoxCollider:
   m_GameObject: {fileID: 129665708144607453}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.056221962, y: 0.79109275, z: 1.8483295}
   m_Center: {x: 1.1143626, y: 0.3545751, z: -0.13941316}
@@ -8805,7 +8892,7 @@ BoxCollider:
   m_GameObject: {fileID: 129665708144607453}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.06172037, y: 0.79109275, z: 1.8483295}
   m_Center: {x: -1.8305428, y: 0.3545751, z: -0.13942923}
@@ -8818,7 +8905,7 @@ BoxCollider:
   m_GameObject: {fileID: 129665708144607453}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 3.0038376, y: 0.79109275, z: 0.062025905}
   m_Center: {x: -0.35949427, y: 0.3545751, z: -1.0322286}
@@ -8831,7 +8918,7 @@ BoxCollider:
   m_GameObject: {fileID: 129665708144607453}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 3.0038376, y: 0.79109275, z: 0.06379539}
   m_Center: {x: -0.35949323, y: 0.3545751, z: 0.75284886}
@@ -18813,7 +18900,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 2.4, y: 1}
+    m_SensorSize: {x: 2.2135305, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -18846,7 +18933,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4084381583895715230}
-  m_LocalRotation: {x: -0.010794178, y: 0.98842126, z: -0.08537011, w: -0.124975786}
+  m_LocalRotation: {x: -0.010794175, y: 0.98842126, z: -0.08537011, w: -0.12497575}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -19072,7 +19159,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4084381584930587840}
-  m_LocalRotation: {x: -0.015326798, y: 0.98466784, z: -0.121218145, w: -0.124501206}
+  m_LocalRotation: {x: -0.0153267905, y: 0.98466784, z: -0.12121812, w: -0.124501176}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -19116,7 +19203,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 2.4, y: 1}
+    m_SensorSize: {x: 2.2135305, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -19161,7 +19248,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 2.4, y: 1}
+    m_SensorSize: {x: 2.2135305, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -19194,7 +19281,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4084381585097926146}
-  m_LocalRotation: {x: -0.013059642, y: 0.98670983, z: -0.10328747, w: -0.12475936}
+  m_LocalRotation: {x: -0.013059647, y: 0.98670983, z: -0.10328747, w: -0.12475939}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -19250,7 +19337,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 2.4, y: 1}
+    m_SensorSize: {x: 2.2135305, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
