@@ -1717,8 +1717,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.056221962, y: 0.79109275, z: 0.42678243}
-  m_Center: {x: 1.1143639, y: 0.3545751, z: -0.78521395}
+  m_Size: {x: 0.23112762, y: 0.79109275, z: 0.4267825}
+  m_Center: {x: 1.1546737, y: 0.3545751, z: -0.78521323}
 --- !u!65 &635227248
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1730,8 +1730,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.06172037, y: 0.79109275, z: 1.8483295}
-  m_Center: {x: -1.8305428, y: 0.3545751, z: -0.13942923}
+  m_Size: {x: 0.8542985, y: 0.79109275, z: 1.8483295}
+  m_Center: {x: -2.1692798, y: 0.3545751, z: -0.13943006}
 --- !u!65 &635227249
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1743,8 +1743,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.0038376, y: 0.79109275, z: 0.062025905}
-  m_Center: {x: -0.35949427, y: 0.3545751, z: -1.0322286}
+  m_Size: {x: 3.0038376, y: 1.1735878, z: 0.5470146}
+  m_Center: {x: -0.3594925, y: 0.5458226, z: -1.259913}
 --- !u!65 &635227250
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1756,8 +1756,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.0038376, y: 0.79109275, z: 0.06379539}
-  m_Center: {x: -0.35949323, y: 0.3545751, z: 0.75284886}
+  m_Size: {x: 3.0038376, y: 1.0654473, z: 0.70105314}
+  m_Center: {x: -0.3594964, y: 0.4917524, z: 1.0475714}
 --- !u!1 &637079521
 GameObject:
   m_ObjectHideFlags: 0
@@ -15353,11 +15353,11 @@ MonoBehaviour:
   isClimbing: 0
   possitionOffset: 0.5
   offsetfromwall: 0.25
-  speed_multiplier: 0.2
+  speed_multiplier: 5
   climbSpeed: 7
-  angledist: 2
-  raytomovedir: 0.05
-  rotateSpeed: 5
+  angledist: 1
+  raytomovedir: 0.3
+  rotateSpeed: 0.05
   baseiKSnap:
     rh: {x: 2, y: 5, z: 0.5}
     lh: {x: -2, y: 5, z: 0.5}
@@ -15365,6 +15365,9 @@ MonoBehaviour:
     rf: {x: 0.25, y: -0.3, z: 0.001}
   a_hook: {fileID: 1284591342265091019}
   isMid: 0
+  ignorelayer:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!114 &1284591342265091021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18933,7 +18936,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4084381583895715230}
-  m_LocalRotation: {x: -0.010794175, y: 0.98842126, z: -0.08537011, w: -0.12497575}
+  m_LocalRotation: {x: -0.010794178, y: 0.98842126, z: -0.08537011, w: -0.124975786}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -19159,7 +19162,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4084381584930587840}
-  m_LocalRotation: {x: -0.0153267905, y: 0.98466784, z: -0.12121812, w: -0.124501176}
+  m_LocalRotation: {x: -0.015326798, y: 0.98466784, z: -0.121218145, w: -0.124501206}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

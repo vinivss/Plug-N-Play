@@ -57,7 +57,7 @@ namespace Jupiter
 
         public bool isMid;
 
-        LayerMask ignorelayer;
+       public LayerMask ignorelayer;
 
 
         void Awake()
@@ -88,7 +88,7 @@ namespace Jupiter
             helper.name = "climb helper";
             a_hook.Init(this, helper);
             //CheckforClimb();
-            ignorelayer = ~(0 <<8);
+            //ignorelayer = ~(0 <<8);
         }
 
         public bool CheckforClimb()
