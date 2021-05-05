@@ -17,6 +17,8 @@ namespace Squid
         int i = 0;
         int sizeofList;
         [SerializeField] int Touch;
+        public bool hasWon = false;
+        float winTimer = 5.0f;
         private void Awake()
         {
             //manager = GameObject.Find("GameManager").GetComponent<GameManager>();
@@ -27,7 +29,13 @@ namespace Squid
             }
             sizeofList = checkpoints.Count;
         }
-
+        private void Update()
+        {
+            if (hasWon == true)
+            {
+                winTimer -= Time.fixedDeltaTime;
+            }
+        }
         public void EnterColl()
         {
             if (Touch < checkpoints.Count)
@@ -41,11 +49,12 @@ namespace Squid
                 {
                     checkpoints[i].SetActive(true);
                 }
+                else
+                {
+                    Win();
+                }
             }
-            else
-            {
-                Win();
-            }
+           
 
         }
 
@@ -56,14 +65,11 @@ namespace Squid
             Debug.Log("WIN");
 
 
-            if (winTime <= 0.0f)
-            {
-                Cursor.lockState = CursorLockMode.Locked;
+            Cursor.lockState = CursorLockMode.Locked;
 
-                //manager.FerrisWheel = true;
+            manager.FerrisWheel = true;
 
-                SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("Spin"));
-            }
-        }
+            SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("Spin"));
+        } 
     }
 }

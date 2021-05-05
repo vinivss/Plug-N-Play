@@ -11,5 +11,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Whackamole.unity
     guid: ea192d6386dcd724bbc560da1958be44
+  - enabled: 1
+    path: Assets/Scenes/Spin.unity
+    guid: 6d92f248b72a04145903a6f3965eefe8
+  - enabled: 1
+    path: Assets/Scenes/Piano.unity
+    guid: f5af754f267740246b16371887a92f4b
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 0e10f918963c56a4cbcef8ee748b141a, type: 2}

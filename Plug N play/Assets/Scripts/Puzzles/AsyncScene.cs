@@ -35,10 +35,11 @@ namespace Squid
                     }
                     if (load == true)
                     {
+                        Cursor.lockState = CursorLockMode.None;
                         Time.timeScale = 0;
                         SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName));
                     }
-                    Cursor.lockState = CursorLockMode.None;
+
                 }
             };
         }
