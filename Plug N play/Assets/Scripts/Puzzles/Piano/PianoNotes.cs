@@ -25,18 +25,20 @@ namespace Squid
         public AudioSource bb;
         public AudioSource cs1;
         public AudioSource ds1;
-        public int noteGuess;
+        public int notewin = 6;
         public int timeskeypress;
-        bool win = false;
         public GameObject WinScreen;
         float winTime = 5.0f;
         GameManager manager;
         enPiano piano;
+        public AsyncScene cont;
 
         public void Start()
         {
+            cont = GameObject.FindObjectOfType<AsyncScene>();
             manager = GameObject.Find("GameManager").GetComponent<GameManager>();
             Cursor.lockState = CursorLockMode.None;
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName("Spin"));
         }
         public void playPiano(enPiano note)
         {
@@ -46,108 +48,255 @@ namespace Squid
                 case enPiano.C:
                     {
                         Debug.Log("C");
+                        if(timeskeypress < notewin)
+                        {
+                            timeskeypress++;
+                        }
+                        else if(timeskeypress >= notewin)
+                        {
+                            Win();
+                        }
+
                         break;
 
                     }
                 case enPiano.D:
                     {
+
                         Debug.Log("D");
+                       
+                        if (timeskeypress < notewin)
+                        {
+                            timeskeypress++;
+                        }
+                        else if (timeskeypress >= notewin)
+                        {
+                            Win();
+                        }
                         break;
 
                     }
                 case enPiano.E:
                     {
                         Debug.Log("E");
+                        if (timeskeypress < notewin)
+                        {
+                            timeskeypress++;
+                        }
+                        else if (timeskeypress >= notewin)
+                        {
+                            Win();
+                        }
                         break;
 
                     }
                 case enPiano.F:
                     {
                         Debug.Log("F");
+                        if (timeskeypress < notewin)
+                        {
+                            timeskeypress++;
+                        }
+                        else if (timeskeypress >= notewin)
+                        {
+                            Win();
+                        }
                         break;
 
                     }
                 case enPiano.G:
                     {
                         Debug.Log("G");
+                        if (timeskeypress < notewin)
+                        {
+                            timeskeypress++;
+                        }
+                        else if (timeskeypress >= notewin)
+                        {
+                            Win();
+                        }
                         break;
 
                     }
                 case enPiano.A:
                     {
                         Debug.Log("A");
+                        if (timeskeypress < notewin)
+                        {
+                            timeskeypress++;
+                        }
+                        else if (timeskeypress >= notewin)
+                        {
+                            Win();
+                        }
                         break;
 
                     }
                 case enPiano.B:
                     {
                         Debug.Log("B");
+                        if (timeskeypress < notewin)
+                        {
+                            timeskeypress++;
+                        }
+                        else if (timeskeypress >= notewin)
+                        {
+                            Win();
+                        }
                         break;
 
                     }
                 case enPiano.C1:
                     {
-                        Debug.Log("C1"); ;
+                        Debug.Log("C1");
+                        if (timeskeypress < notewin)
+                        {
+                            timeskeypress++;
+                        }
+                        else if (timeskeypress >= notewin)
+                        {
+                            Win();
+                        }
                         break;
 
                     }
                 case enPiano.D1:
                     {
                         Debug.Log("D1");
+                        if (timeskeypress < notewin)
+                        {
+                            timeskeypress++;
+                        }
+                        else if (timeskeypress >= notewin)
+                        {
+                            Win();
+                        }
                         break;
 
                     }
                 case enPiano.E1:
                     {
                         Debug.Log("E1");
+                        if (timeskeypress < notewin)
+                        {
+                            timeskeypress++;
+                        }
+                        else if (timeskeypress >= notewin)
+                        {
+                            Win();
+                        }
                         break;
 
                     }
                 case enPiano.F1:
                     {
                         Debug.Log("F1");
+                        if (timeskeypress < notewin)
+                        {
+                            timeskeypress++;
+                        }
+                        else if (timeskeypress >= notewin)
+                        {
+                            Win();
+                        }
                         break;
 
                     }
                 case enPiano.CS:
                     {
                         Debug.Log("CS");
+                        if (timeskeypress < notewin)
+                        {
+                            timeskeypress++;
+                        }
+                        else if (timeskeypress >= notewin)
+                        {
+                            Win();
+                        }
                         break;
 
                     }
                 case enPiano.DS:
                     {
                         Debug.Log("DS");
+                        if (timeskeypress < notewin)
+                        {
+                            timeskeypress++;
+                        }
+                        else if (timeskeypress >= notewin)
+                        {
+                            Win();
+                        }
                         break;
 
                     }
                 case enPiano.FS:
                     {
                         Debug.Log("Fs");
+                        if (timeskeypress < notewin)
+                        {
+                            timeskeypress++;
+                        }
+                        else if (timeskeypress >= notewin)
+                        {
+                            Win();
+                        }
                         break;
 
                     }
                 case enPiano.GS:
                     {
                         Debug.Log("GS");
+                        if (timeskeypress < notewin)
+                        {
+                            timeskeypress++;
+                        }
+                        else if (timeskeypress >= notewin)
+                        {
+                            Win();
+                        }
                         break;
 
                     }
                 case enPiano.Bb:
                     {
                         Debug.Log("Bb");
+                        if (timeskeypress < notewin)
+                        {
+                            timeskeypress++;
+                        }
+                        else if (timeskeypress >= notewin)
+                        {
+                            Win();
+                        }
                         break;
 
                     }
                 case enPiano.CS1:
                     {
                         Debug.Log("CS1");
+                        if (timeskeypress < notewin)
+                        {
+                            timeskeypress++;
+                        }
+                        else if (timeskeypress >= notewin)
+                        {
+                            Win();
+                        }
                         break;
 
                     }
                 case enPiano.DS1:
                     {
                         Debug.Log("DS1");
+                        if (timeskeypress < notewin)
+                        {
+                            timeskeypress++;
+                        }
+                        else if (timeskeypress >= notewin)
+                        {
+                            Win();
+                        }
                         break;
 
                     }
@@ -156,17 +305,17 @@ namespace Squid
 
         public void Win()
         {
-            Time.timeScale = 1.0f;
+           
 
             WinScreen.SetActive(true);
-
+            cont.becomeActive();
 
 
             if (winTime <= 0.0f)
             {
                 Cursor.lockState = CursorLockMode.Locked;
 
-                manager.RoombaReady = true;
+                manager.PianoDone = true;
 
                 SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("Piano"));
             }
@@ -263,6 +412,7 @@ namespace Squid
             ds1.Play();
             playPiano(enPiano.DS1);
         }
+      
 
     }
 }

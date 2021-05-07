@@ -14,16 +14,17 @@ namespace Squid
         // Start is called before the first frame update
         private void Awake()
         {
-            manager = GameObject.Find("GameManager").GetComponent<GameManager>();
-            control.CharacterControls.Pickup.performed += ctx =>
-            {
-                Debug.LogWarning("E");
-                if (isIn == true)
-                {
-                    UIshowup.SetActive(true);
-                    Cursor.lockState = CursorLockMode.None;
-                }
-            };
+            control = new _3Dcontrols();
+            //manager = GameObject.Find("GameManager").GetComponent<GameManager>();
+            //control.CharacterControls.Pickup.performed += ctx =>
+            //{
+            //    Debug.LogWarning("E");
+            //    if (isIn == true)
+            //    {
+            //        UIshowup.SetActive(true);
+            //        Cursor.lockState = CursorLockMode.None;
+            //    }
+            //};
         }
 
 

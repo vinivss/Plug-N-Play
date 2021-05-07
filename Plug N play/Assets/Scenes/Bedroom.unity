@@ -7005,6 +7005,7 @@ MonoBehaviour:
   sceneName: Spin
   Manager: {fileID: 1434753503}
   E: {fileID: 1750585514}
+  cont: {fileID: 0}
 --- !u!65 &1790624636
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17621,6 +17622,7 @@ MonoBehaviour:
   sceneName: Whackamole
   Manager: {fileID: 1434753503}
   E: {fileID: 1750585514}
+  cont: {fileID: 0}
 --- !u!1 &2984422392727103870
 GameObject:
   m_ObjectHideFlags: 0
@@ -17670,7 +17672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac109ddc04b7da54caad3b4f9b511f2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
+  anim: {fileID: 2984422392727103871}
 --- !u!23 &3067463448083512626
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19242,7 +19244,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4084381583895715230}
-  m_LocalRotation: {x: -0.010794178, y: 0.98842126, z: -0.08537011, w: -0.124975786}
+  m_LocalRotation: {x: -0.010794175, y: 0.98842126, z: -0.08537011, w: -0.12497575}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -19468,7 +19470,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4084381584930587840}
-  m_LocalRotation: {x: -0.015326798, y: 0.98466784, z: -0.121218145, w: -0.124501206}
+  m_LocalRotation: {x: -0.0153267905, y: 0.98466784, z: -0.12121812, w: -0.124501176}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public bool DSEject;
     public bool RoombaReady;
     public int CoinCount;
+    public bool PianoDone;
 
 
 

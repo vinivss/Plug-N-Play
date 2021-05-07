@@ -15,6 +15,8 @@ namespace Squid
         public GameObject E;
         bool isIn;
         bool load;
+        public GameObject cont;
+
 
 
         void Awake()
@@ -24,6 +26,7 @@ namespace Squid
             Debug.Log(sceneName);
             control = new _3Dcontrols();
             Manager = GameObject.Find("GameManager").GetComponent<GameManager>();
+            cont = GameObject.Find("Player1 1");
             control.CharacterControls.Pickup.performed += ctx =>
             {
                 if (isIn == true)
@@ -36,15 +39,19 @@ namespace Squid
                     if (load == true)
                     {
                         Cursor.lockState = CursorLockMode.None;
-                        Time.timeScale = 0;
-                        SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName));
+                        //Time.timeScale = 0;
+                        cont.SetActive(false);
+                       
                     }
 
                 }
             };
         }
 
-
+        public void becomeActive()
+        {
+            cont.SetActive(true);
+        }
         private void Update()
         {
             if (isIn == true)

@@ -19,15 +19,18 @@ namespace Squid
         [SerializeField] int Touch;
         public bool hasWon = false;
         float winTimer = 5.0f;
-        private void Awake()
+        public AsyncScene cont;
+        private void Start()
         {
-            //manager = GameObject.Find("GameManager").GetComponent<GameManager>();
+            manager = GameObject.Find("GameManager").GetComponent<GameManager>();
             //Time.timeScale = 0.0f;
             foreach (GameObject GO in checkpoints)
             {
                 GO.GetComponent<ChildCollide>().ChildTouch.AddListener(EnterColl);
             }
             sizeofList = checkpoints.Count;
+            cont = GameObject.FindObjectOfType<AsyncScene>();
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName("Spin"));
         }
         private void Update()
         {
@@ -64,7 +67,7 @@ namespace Squid
             //WinScreen.SetActive(true);
             Debug.Log("WIN");
 
-
+            cont.becomeActive();
             Cursor.lockState = CursorLockMode.Locked;
 
             manager.FerrisWheel = true;
