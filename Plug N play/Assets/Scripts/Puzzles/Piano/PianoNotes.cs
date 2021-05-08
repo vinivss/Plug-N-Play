@@ -31,6 +31,7 @@ namespace Squid
         float winTime = 5.0f;
         GameManager manager;
         enPiano piano;
+        public bool win;
         public AsyncScene cont;
 
         public void Start()
@@ -39,6 +40,17 @@ namespace Squid
             manager = GameObject.Find("GameManager").GetComponent<GameManager>();
             Cursor.lockState = CursorLockMode.None;
             SceneManager.SetActiveScene(SceneManager.GetSceneByName("Spin"));
+        }
+        public void Update()
+        {
+         
+                if (win == true)
+                {
+
+                    winTime = winTime - Time.fixedDeltaTime;
+                    
+                }
+            
         }
         public void playPiano(enPiano note)
         {
@@ -54,6 +66,7 @@ namespace Squid
                         }
                         else if(timeskeypress >= notewin)
                         {
+                            win = true;
                             Win();
                         }
 
@@ -71,6 +84,7 @@ namespace Squid
                         }
                         else if (timeskeypress >= notewin)
                         {
+                            win = true;
                             Win();
                         }
                         break;
@@ -85,6 +99,7 @@ namespace Squid
                         }
                         else if (timeskeypress >= notewin)
                         {
+                            win = true;
                             Win();
                         }
                         break;
@@ -99,6 +114,7 @@ namespace Squid
                         }
                         else if (timeskeypress >= notewin)
                         {
+                            win = true;
                             Win();
                         }
                         break;
@@ -113,6 +129,7 @@ namespace Squid
                         }
                         else if (timeskeypress >= notewin)
                         {
+                            win = true;
                             Win();
                         }
                         break;
@@ -127,6 +144,7 @@ namespace Squid
                         }
                         else if (timeskeypress >= notewin)
                         {
+                            win = true;
                             Win();
                         }
                         break;
@@ -141,6 +159,7 @@ namespace Squid
                         }
                         else if (timeskeypress >= notewin)
                         {
+                            win = true;
                             Win();
                         }
                         break;
@@ -155,6 +174,7 @@ namespace Squid
                         }
                         else if (timeskeypress >= notewin)
                         {
+                            win = true;
                             Win();
                         }
                         break;
@@ -169,6 +189,7 @@ namespace Squid
                         }
                         else if (timeskeypress >= notewin)
                         {
+                            win = true;
                             Win();
                         }
                         break;
@@ -183,6 +204,7 @@ namespace Squid
                         }
                         else if (timeskeypress >= notewin)
                         {
+                            win = true;
                             Win();
                         }
                         break;
@@ -197,6 +219,7 @@ namespace Squid
                         }
                         else if (timeskeypress >= notewin)
                         {
+                            win = true;
                             Win();
                         }
                         break;
@@ -211,6 +234,7 @@ namespace Squid
                         }
                         else if (timeskeypress >= notewin)
                         {
+                            win = true;
                             Win();
                         }
                         break;
@@ -225,6 +249,7 @@ namespace Squid
                         }
                         else if (timeskeypress >= notewin)
                         {
+                            win = true;
                             Win();
                         }
                         break;
@@ -239,6 +264,7 @@ namespace Squid
                         }
                         else if (timeskeypress >= notewin)
                         {
+                            win = true;
                             Win();
                         }
                         break;
@@ -253,6 +279,7 @@ namespace Squid
                         }
                         else if (timeskeypress >= notewin)
                         {
+                            win = true;
                             Win();
                         }
                         break;
@@ -267,6 +294,7 @@ namespace Squid
                         }
                         else if (timeskeypress >= notewin)
                         {
+                            win = true;
                             Win();
                         }
                         break;
@@ -281,6 +309,7 @@ namespace Squid
                         }
                         else if (timeskeypress >= notewin)
                         {
+                            win = true;
                             Win();
                         }
                         break;
@@ -295,6 +324,7 @@ namespace Squid
                         }
                         else if (timeskeypress >= notewin)
                         {
+                            win = true;
                             Win();
                         }
                         break;
@@ -305,7 +335,8 @@ namespace Squid
 
         public void Win()
         {
-           
+
+
 
             WinScreen.SetActive(true);
             cont.becomeActive();
@@ -313,6 +344,7 @@ namespace Squid
 
             if (winTime <= 0.0f)
             {
+                Debug.LogError("Ew");
                 Cursor.lockState = CursorLockMode.Locked;
 
                 manager.PianoDone = true;
