@@ -28,7 +28,7 @@ namespace Squid
         public int notewin = 6;
         public int timeskeypress;
         public GameObject WinScreen;
-        float winTime = 5.0f;
+        float winTime = 2.0f;
         GameManager manager;
         enPiano piano;
         public bool win;
@@ -338,13 +338,13 @@ namespace Squid
 
 
 
-            WinScreen.SetActive(true);
+            //WinScreen.SetActive(true);
             cont.becomeActive();
 
 
             if (winTime <= 0.0f)
             {
-                Debug.LogError("Ew");
+                //Debug.LogError("Ew");
                 Cursor.lockState = CursorLockMode.Locked;
 
                 manager.PianoDone = true;
