@@ -2,45 +2,56 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Squid
-{
+
     public class EnterUSBCColliderUI : MonoBehaviour
     {
         GameManager manager;
-        public bool isIn;
+        public bool In = false;
         public GameObject UIshowup;
         _3Dcontrols control;
 
         // Start is called before the first frame update
         private void Awake()
         {
-            control = new _3Dcontrols();
-            //manager = GameObject.Find("GameManager").GetComponent<GameManager>();
-            //control.CharacterControls.Pickup.performed += ctx =>
-            //{
-            //    Debug.LogWarning("E");
-            //    if (isIn == true)
-            //    {
-            //        UIshowup.SetActive(true);
-            //        Cursor.lockState = CursorLockMode.None;
-            //    }
-            //};
+        manager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        control = new _3Dcontrols();
+         
+              
+             control.CharacterControls.Pickup.performed += ctx =>
+                {
+                    if (In == true)
+                    {
+                        UIshowup.SetActive(true);
+                        Cursor.lockState = CursorLockMode.None;
+                    }
+
+                };
+            
         }
 
-
-        private void OnTriggerEnter(Collider other)
+    public void Update()
+    {
+        Debug.Log("isin " +  In);
+                
+    }
+    private void OnTriggerEnter(Collider other)
         {
+        if (other.gameObject.CompareTag("Player"))
+            {
             if (manager.Climber)
             {
                 Debug.LogWarning("in");
-                isIn = true;
+                In = true;
 
             }
         }
+        }
         private void OnTriggerExit(Collider other)
         {
-            isIn = false;
-
+        if (other.gameObject.CompareTag("Player"))
+        {
+            In = false;
+        }
         }
         private void OnEnable()
         {
@@ -52,4 +63,3 @@ namespace Squid
             control.CharacterControls.Disable();
         }
     }
-}
