@@ -1,0 +1,826 @@
+fileFormatVersion: 2
+guid: 16d6206606ec3654abe83cda37059df4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4896894204978713277
+    second: UI charac_red cloud loop_494, 303_0
+  - first:
+      213: 870582776613204044
+    second: UI charac_red cloud loop_494, 303_1
+  - first:
+      213: -5062427595953496100
+    second: UI charac_red cloud loop_494, 303_2
+  - first:
+      213: 4771143216063591990
+    second: UI charac_red cloud loop_494, 303_3
+  - first:
+      213: -7216851265854894462
+    second: UI charac_red cloud loop_494, 303_4
+  - first:
+      213: -3148398362711821541
+    second: UI charac_red cloud loop_494, 303_5
+  - first:
+      213: -5339610966037025536
+    second: UI charac_red cloud loop_494, 303_6
+  - first:
+      213: -4596629344475375642
+    second: UI charac_red cloud loop_494, 303_7
+  - first:
+      213: -3707286393787256070
+    second: UI charac_red cloud loop_494, 303_8
+  - first:
+      213: -6270901215967315729
+    second: UI charac_red cloud loop_494, 303_9
+  - first:
+      213: -6452326836876177374
+    second: UI charac_red cloud loop_494, 303_10
+  - first:
+      213: 3567160530235674293
+    second: UI charac_red cloud loop_494, 303_11
+  - first:
+      213: -8905736557512839376
+    second: UI charac_red cloud loop_494, 303_12
+  - first:
+      213: -5579185166380863059
+    second: UI charac_red cloud loop_494, 303_13
+  - first:
+      213: -1800288717737745842
+    second: UI charac_red cloud loop_494, 303_14
+  - first:
+      213: -6780816039039078149
+    second: UI charac_red cloud loop_494, 303_15
+  - first:
+      213: -7320370762454670991
+    second: UI charac_red cloud loop_494, 303_16
+  - first:
+      213: -317228312351909625
+    second: UI charac_red cloud loop_494, 303_17
+  - first:
+      213: 6913460330755526003
+    second: UI charac_red cloud loop_494, 303_18
+  - first:
+      213: 7344611171842408809
+    second: UI charac_red cloud loop_494, 303_19
+  - first:
+      213: 4502146180276447201
+    second: UI charac_red cloud loop_494, 303_20
+  - first:
+      213: 759049965109953142
+    second: UI charac_red cloud loop_494, 303_21
+  - first:
+      213: -4788268780875053601
+    second: UI charac_red cloud loop_494, 303_22
+  - first:
+      213: 8467785662550232
+    second: UI charac_red cloud loop_494, 303_23
+  - first:
+      213: 4714693096236705746
+    second: UI charac_red cloud loop_494, 303_24
+  - first:
+      213: -8082303192824953394
+    second: UI charac_red cloud loop_494, 303_25
+  - first:
+      213: -950669437919947934
+    second: UI charac_red cloud loop_494, 303_26
+  - first:
+      213: -1622772989791866127
+    second: UI charac_red cloud loop_494, 303_27
+  - first:
+      213: 2732735553960786585
+    second: UI charac_red cloud loop_494, 303_28
+  - first:
+      213: 2993351758464234073
+    second: UI charac_red cloud loop_494, 303_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1212
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2dc66a55345f340800000000000000
+      internalID: 4896894204978713277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_1
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 1212
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c407a9b3c6ee41c00800000000000000
+      internalID: 870582776613204044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_2
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 1212
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf9e026ce4aeb9b0800000000000000
+      internalID: -5062427595953496100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_3
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 1212
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6363cf5f971863240800000000000000
+      internalID: 4771143216063591990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_4
+      rect:
+        serializedVersion: 2
+        x: 1976
+        y: 1212
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e04ed920898db90800000000000000
+      internalID: -7216851265854894462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_5
+      rect:
+        serializedVersion: 2
+        x: 2470
+        y: 1212
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13f32bbe54ae44d0800000000000000
+      internalID: -3148398362711821541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 909
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d259aed14e5e5b0800000000000000
+      internalID: -5339610966037025536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_7
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 909
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7986617fd7530c0800000000000000
+      internalID: -4596629344475375642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_8
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 909
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af2fba9baa21d8cc0800000000000000
+      internalID: -3707286393787256070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_9
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 909
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8f3b8919849f8a0800000000000000
+      internalID: -6270901215967315729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_10
+      rect:
+        serializedVersion: 2
+        x: 1976
+        y: 909
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22096418deab476a0800000000000000
+      internalID: -6452326836876177374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_11
+      rect:
+        serializedVersion: 2
+        x: 2470
+        y: 909
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5becd754a99118130800000000000000
+      internalID: 3567160530235674293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 606
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03fac3a19c7786480800000000000000
+      internalID: -8905736557512839376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_13
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 606
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da17db5a6a0c292b0800000000000000
+      internalID: -5579185166380863059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_14
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 606
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42291613f61407e0800000000000000
+      internalID: -1800288717737745842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_15
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 606
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0fdc12db3b5e1a0800000000000000
+      internalID: -6780816039039078149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_16
+      rect:
+        serializedVersion: 2
+        x: 1976
+        y: 606
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171ebb79391d86a90800000000000000
+      internalID: -7320370762454670991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_17
+      rect:
+        serializedVersion: 2
+        x: 2470
+        y: 606
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7095199d78af89bf0800000000000000
+      internalID: -317228312351909625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 303
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d007faa8b81ff50800000000000000
+      internalID: 6913460330755526003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_19
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 303
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961480782fc4de560800000000000000
+      internalID: 7344611171842408809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_20
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 303
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7624af816da7e30800000000000000
+      internalID: 4502146180276447201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_21
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 303
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672c621fbefa88a00800000000000000
+      internalID: 759049965109953142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_22
+      rect:
+        serializedVersion: 2
+        x: 1976
+        y: 303
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd589d2c9e6ac8db0800000000000000
+      internalID: -4788268780875053601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_23
+      rect:
+        serializedVersion: 2
+        x: 2470
+        y: 303
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d0537cf7651e1000800000000000000
+      internalID: 8467785662550232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7ec2a3464fd6140800000000000000
+      internalID: 4714693096236705746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_25
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 0
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5c9a86114e5df80800000000000000
+      internalID: -8082303192824953394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_26
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 0
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26316fdde2b8ec2f0800000000000000
+      internalID: -950669437919947934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_27
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 0
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f27b584090ca79e0800000000000000
+      internalID: -1622772989791866127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_28
+      rect:
+        serializedVersion: 2
+        x: 1976
+        y: 0
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ab9e6f180ace520800000000000000
+      internalID: 2732735553960786585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_red cloud loop_494, 303_29
+      rect:
+        serializedVersion: 2
+        x: 2470
+        y: 0
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9523d0b90958a8920800000000000000
+      internalID: 2993351758464234073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

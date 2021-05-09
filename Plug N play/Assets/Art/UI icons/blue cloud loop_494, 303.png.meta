@@ -1,0 +1,826 @@
+fileFormatVersion: 2
+guid: dbaeb8efa9c7b7e4897babe8139123cc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3369311213573370853
+    second: UI charac_blue cloud loop_494, 303_0
+  - first:
+      213: -2828888225961700804
+    second: UI charac_blue cloud loop_494, 303_1
+  - first:
+      213: -6862135083491793775
+    second: UI charac_blue cloud loop_494, 303_2
+  - first:
+      213: 6363906562029548999
+    second: UI charac_blue cloud loop_494, 303_3
+  - first:
+      213: 1908407784302233209
+    second: UI charac_blue cloud loop_494, 303_4
+  - first:
+      213: -5522888118469344473
+    second: UI charac_blue cloud loop_494, 303_5
+  - first:
+      213: -2742472110172147985
+    second: UI charac_blue cloud loop_494, 303_6
+  - first:
+      213: -4144159888537993516
+    second: UI charac_blue cloud loop_494, 303_7
+  - first:
+      213: 2665863300742577148
+    second: UI charac_blue cloud loop_494, 303_8
+  - first:
+      213: -5982077007049410538
+    second: UI charac_blue cloud loop_494, 303_9
+  - first:
+      213: -5518601834601549344
+    second: UI charac_blue cloud loop_494, 303_10
+  - first:
+      213: -6131286535912939394
+    second: UI charac_blue cloud loop_494, 303_11
+  - first:
+      213: 1240229872437098896
+    second: UI charac_blue cloud loop_494, 303_12
+  - first:
+      213: -6658675229276775239
+    second: UI charac_blue cloud loop_494, 303_13
+  - first:
+      213: 7050330199751110932
+    second: UI charac_blue cloud loop_494, 303_14
+  - first:
+      213: 3396139295516925799
+    second: UI charac_blue cloud loop_494, 303_15
+  - first:
+      213: 5838657181582838566
+    second: UI charac_blue cloud loop_494, 303_16
+  - first:
+      213: -1719742155189922958
+    second: UI charac_blue cloud loop_494, 303_17
+  - first:
+      213: 5063683297102101131
+    second: UI charac_blue cloud loop_494, 303_18
+  - first:
+      213: -2911482390380283505
+    second: UI charac_blue cloud loop_494, 303_19
+  - first:
+      213: -1454101583038763006
+    second: UI charac_blue cloud loop_494, 303_20
+  - first:
+      213: 7043064742410888846
+    second: UI charac_blue cloud loop_494, 303_21
+  - first:
+      213: 8621659322648787239
+    second: UI charac_blue cloud loop_494, 303_22
+  - first:
+      213: 1416464040787181126
+    second: UI charac_blue cloud loop_494, 303_23
+  - first:
+      213: -5277923000244746930
+    second: UI charac_blue cloud loop_494, 303_24
+  - first:
+      213: 7228779368152149733
+    second: UI charac_blue cloud loop_494, 303_25
+  - first:
+      213: -4594712321909640329
+    second: UI charac_blue cloud loop_494, 303_26
+  - first:
+      213: -3795833234797862242
+    second: UI charac_blue cloud loop_494, 303_27
+  - first:
+      213: -3618288629289808035
+    second: UI charac_blue cloud loop_494, 303_28
+  - first:
+      213: 8308641891739936893
+    second: UI charac_blue cloud loop_494, 303_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1212
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3f7c682b232ce20800000000000000
+      internalID: 3369311213573370853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_1
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 1212
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3294468525cdb8d0800000000000000
+      internalID: -2828888225961700804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_2
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 1212
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194e9bbaf7cc4c0a0800000000000000
+      internalID: -6862135083491793775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_3
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 1212
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c57c8dfc43215850800000000000000
+      internalID: 6363906562029548999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_4
+      rect:
+        serializedVersion: 2
+        x: 1976
+        y: 1212
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976cce5c4c60c7a10800000000000000
+      internalID: 1908407784302233209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_5
+      rect:
+        serializedVersion: 2
+        x: 2470
+        y: 1212
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723c86c8482ca53b0800000000000000
+      internalID: -5522888118469344473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 909
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feee5c26528c0f9d0800000000000000
+      internalID: -2742472110172147985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_7
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 909
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de354fb98cfc76c0800000000000000
+      internalID: -4144159888537993516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_8
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 909
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfbf2843c8c0ff420800000000000000
+      internalID: 2665863300742577148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_9
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 909
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 618b9cf08a46bfca0800000000000000
+      internalID: -5982077007049410538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_10
+      rect:
+        serializedVersion: 2
+        x: 1976
+        y: 909
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e171c7cedcf963b0800000000000000
+      internalID: -5518601834601549344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_11
+      rect:
+        serializedVersion: 2
+        x: 2470
+        y: 909
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7026ca616b49eaa0800000000000000
+      internalID: -6131286535912939394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 606
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099f07a7f7e263110800000000000000
+      internalID: 1240229872437098896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_13
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 606
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bcd34c7822a793a0800000000000000
+      internalID: -6658675229276775239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_14
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 606
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411bf5166fdc7d160800000000000000
+      internalID: 7050330199751110932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_15
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 606
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76f180d12b2812f20800000000000000
+      internalID: 3396139295516925799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_16
+      rect:
+        serializedVersion: 2
+        x: 1976
+        y: 606
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b4789a5c3170150800000000000000
+      internalID: 5838657181582838566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_17
+      rect:
+        serializedVersion: 2
+        x: 2470
+        y: 606
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273d3a61f9f3228e0800000000000000
+      internalID: -1719742155189922958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 303
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a79d25121d54640800000000000000
+      internalID: 5063683297102101131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_19
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 303
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f89f39f01365897d0800000000000000
+      internalID: -2911482390380283505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_20
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 303
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20034ab705ef1dbe0800000000000000
+      internalID: -1454101583038763006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_21
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 303
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86aa75411efdb160800000000000000
+      internalID: 7043064742410888846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_22
+      rect:
+        serializedVersion: 2
+        x: 1976
+        y: 303
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7297ae4797946a770800000000000000
+      internalID: 8621659322648787239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_23
+      rect:
+        serializedVersion: 2
+        x: 2470
+        y: 303
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64efb345a8a48a310800000000000000
+      internalID: 1416464040787181126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e454c82befc01c6b0800000000000000
+      internalID: -5277923000244746930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_25
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 0
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eea16e1988c15460800000000000000
+      internalID: 7228779368152149733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_26
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 0
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 773377fac7d4c30c0800000000000000
+      internalID: -4594712321909640329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_27
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 0
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92604db8cd725bc0800000000000000
+      internalID: -3795833234797862242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_28
+      rect:
+        serializedVersion: 2
+        x: 1976
+        y: 0
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f885489a149cdc0800000000000000
+      internalID: -3618288629289808035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI charac_blue cloud loop_494, 303_29
+      rect:
+        serializedVersion: 2
+        x: 2470
+        y: 0
+        width: 494
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78a61b87c93e4370800000000000000
+      internalID: 8308641891739936893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
