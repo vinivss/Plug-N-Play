@@ -12,7 +12,7 @@ namespace Squid
     {
         GameManager manager;
         public GameObject WinScreen;
-        float winTime = 5.0f;
+        //float winTime = 5.0f;
         public List<GameObject>  checkpoints;
         int i = 0;
         int sizeofList;

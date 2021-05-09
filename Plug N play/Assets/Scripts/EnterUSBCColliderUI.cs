@@ -9,6 +9,7 @@ using UnityEngine;
         public bool In = false;
         public GameObject UIshowup;
         _3Dcontrols control;
+    [SerializeField] GameObject E;
 
         // Start is called before the first frame update
         private void Awake()
@@ -32,7 +33,16 @@ using UnityEngine;
     public void Update()
     {
         Debug.Log("isin " +  In);
-                
+      
+            if (In == true)
+            {
+                E.SetActive(true);
+            }
+
+            else
+            {
+                E.SetActive(false);
+            }
     }
     private void OnTriggerEnter(Collider other)
         {
