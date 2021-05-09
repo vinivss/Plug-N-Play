@@ -17,8 +17,9 @@ namespace Squid
         bool load;
         public GameObject cont;
         [SerializeField] bool climber;
-        [SerializeField] bool selective;
-
+      
+        [SerializeField] bool miniUsB;
+       
 
         void Awake()
         {
@@ -30,7 +31,7 @@ namespace Squid
             cont = GameObject.Find("Player1 1");
             control.CharacterControls.Pickup.performed += ctx =>
             {
-                if (!selective || climber)
+                if ((!climber || Manager.Climber) && (!miniUsB ||  Manager.USBmini))
                 {
                     if (isIn == true)
 
