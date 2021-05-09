@@ -22,7 +22,7 @@ namespace Squid
         public AsyncScene cont;
         private void Start()
         {
-            manager = GameObject.Find("GameManager").GetComponent<GameManager>();
+            //manager = GameObject.Find("GameManager").GetComponent<GameManager>();
             //Time.timeScale = 0.0f;
             foreach (GameObject GO in checkpoints)
             {
