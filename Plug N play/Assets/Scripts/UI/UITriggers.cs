@@ -18,7 +18,7 @@ namespace Jupiter
         public GameObject CamUSB;
         public GameObject CamCar;
         public GameObject Buttoff;
-
+        public GameObject EasterButt;
 
 
         void Awake()
@@ -48,7 +48,14 @@ namespace Jupiter
 
         public void Roomba()
         {
-            gameManager.RoombaReady = true;
+            //gameManager.RoombaReady = true;
+            //Destroy(Buttoff);
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
+        public void DS()
+        {
+            gameManager.DSEject = true;
             Destroy(Buttoff);
             Cursor.lockState = CursorLockMode.Locked;
         }

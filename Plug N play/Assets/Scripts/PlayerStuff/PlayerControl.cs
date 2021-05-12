@@ -32,6 +32,7 @@ namespace Jupiter
         public float deceleration = 1.0f;
         public float maximumVelocity = 0.5f;
         public GameObject checkground;
+        public CheckFloor check;
 
 
         int VelocityZHash;
@@ -44,7 +45,7 @@ namespace Jupiter
             input.CharacterControls.Movement.performed += ctx =>
             {
                 currentMove = ctx.ReadValue<Vector2>();
-                Debug.Log(currentMove);
+                //Debug.Log(currentMove);
                 movementPressed = currentMove.x != 0 || currentMove.y != 0;
 
                 //Cam.TransformCam();
@@ -250,15 +251,15 @@ namespace Jupiter
             velocityZ = 0.0f;
             anim.CrossFade("MovementBlend Tree",0.2f);
             rigid.isKinematic = false;
-            
-            
+            checkground.SetActive(true);
+            check.Floor = false;
             //controller.enabled = true;
             isClimbing = false;
             //anim.enabled = true;
             //anim.applyRootMotion = true;
             climbOff = true;
             climbTimer = Time.realtimeSinceStartup;
-            checkground.SetActive(true);
+           
         }
 
       public IEnumerator FreezeMovement(float time)

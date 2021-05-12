@@ -14,12 +14,14 @@ public class KeyPickup : MonoBehaviour
         manager = GameObject.Find("GameManager").GetComponent<GameManager>();
         control.CharacterControls.Pickup.performed += ctx =>
         {
+           
             if (isIn == true)
 
             {
                 manager.CoinCount++;
+                Debug.Log(manager.CoinCount);
 
-                Destroy(gameObject);
+                DestroyImmediate(gameObject);
 
             }
         };
@@ -29,9 +31,22 @@ public class KeyPickup : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         isIn = true;
+        Debug.Log("Is  in");
     }
     public void OnTriggerExit(Collider other)
     {
         isIn = false;
+    }
+    void OnEnable()
+    {
+        control.CharacterControls.Enable();
+        control.CameraControls.Enable();
+    }
+
+    void OnDisable()
+    {
+
+        control.CharacterControls.Disable();
+        control.CameraControls.Disable();
     }
 }

@@ -6534,6 +6534,11 @@ MonoBehaviour:
   bb: {fileID: 944279744}
   cs1: {fileID: 1663857951}
   ds1: {fileID: 1974011979}
+  notewin: 6
+  timeskeypress: 0
+  WinScreen: {fileID: 0}
+  win: 0
+  cont: {fileID: 0}
 --- !u!1 &2140963616
 GameObject:
   m_ObjectHideFlags: 0

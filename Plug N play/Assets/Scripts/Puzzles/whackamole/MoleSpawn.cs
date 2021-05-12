@@ -21,12 +21,16 @@ namespace Squid
         GameManager manager;
         public GameObject WinScreen;
         float winTime = 5.0f;
+        public AsyncScene cont;
+        bool start = false;
         // Start is called before the first frame update
         void Start()
         {
             manager = GameObject.Find("GameManager").GetComponent<GameManager>();
+            cont = GameObject.FindObjectOfType<AsyncScene>();
             Cursor.lockState = CursorLockMode.None;
-            
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName("Whackamole"));
+
         }
 
         // Update is called once per frame
@@ -34,13 +38,18 @@ namespace Squid
         public void firstClick()
         {
             DestroyImmediate(spwnButt);
+            start = true;
+            
             Spawn();
             timer = TimeSaved;
         }
         void Update()
         {
-            timer -= 0.5f;
-
+            if (start)
+            {
+                //Debug.LogError("called");
+                timer -= 0.5f;
+            }
             if (timer <= 0.0f)
             {
                 Demolish();
@@ -55,6 +64,7 @@ namespace Squid
         }
         public void Spawn()
         {
+            Debug.Log("asadas");
             if(Butt != null)
             {
                 Debug.Log("Butt Null");
@@ -102,16 +112,21 @@ namespace Squid
 
         public void Demolish()
         {
-
-            DestroyImmediate(Butt.gameObject);
-            timer = TimeSaved;
-            Spawn();
+            if (start)
+            {
+                if (Butt != null)
+                {
+                    DestroyImmediate(Butt.gameObject);
+                }
+                timer = TimeSaved;
+                Spawn();
+            }
         }
 
         public void Win()
         {
 
-            Time.timeScale = 1.0f;
+            cont.becomeActive();
             
             WinScreen.SetActive(true);
             

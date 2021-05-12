@@ -7,7 +7,7 @@ namespace Jupiter
     public class CheckFloor : MonoBehaviour
     {
         public PlayerControl player;
-        bool Floor;
+        public bool Floor = false;
         private void Start()
         {
       
