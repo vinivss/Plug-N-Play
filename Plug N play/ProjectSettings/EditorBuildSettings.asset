@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Piano.unity
     guid: f5af754f267740246b16371887a92f4b
+  - enabled: 1
+    path: Assets/Scenes/Phone.unity
+    guid: fd3d09239e4e90f499e3c2c5d828fe37
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 0e10f918963c56a4cbcef8ee748b141a, type: 2}
