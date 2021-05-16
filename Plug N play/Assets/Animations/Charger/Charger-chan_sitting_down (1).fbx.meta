@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: d9714d06d6b4d674a99106805116b6fe
+guid: 724e0b60edd6b9941b9189ca8cd0de4d
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable:
   - first:
       74: -1498010087492872569
-    second: Standing Up
+    second: SittingDown
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -26,7 +26,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -35,7 +35,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Standing Up
+      name: SittingDown
       takeName: CINEMA_4D_Main
       internalID: 0
       firstFrame: 0
@@ -122,11 +122,11 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 53c040e05877fad46b2e488f3918af69, type: 3}
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 2
+  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

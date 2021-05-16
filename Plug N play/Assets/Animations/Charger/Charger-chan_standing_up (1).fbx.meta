@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 295be9f981dd46c48998de867b18a7a2
+guid: b6a4f9fb6dba20c4093cd8f9c4925b83
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable:
   - first:
       74: -1498010087492872569
-    second: Charger Sitting Down
+    second: Standup
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -35,7 +35,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Charger Sitting Down
+      name: Standup
       takeName: CINEMA_4D_Main
       internalID: 0
       firstFrame: 0
@@ -122,11 +122,11 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 53c040e05877fad46b2e488f3918af69, type: 3}
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 2
+  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

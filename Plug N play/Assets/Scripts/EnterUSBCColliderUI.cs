@@ -32,7 +32,7 @@ using UnityEngine;
 
     public void Update()
     {
-        Debug.Log("isin " +  In);
+        //Debug.Log("isin " +  In);
       
             if (In == true)
             {

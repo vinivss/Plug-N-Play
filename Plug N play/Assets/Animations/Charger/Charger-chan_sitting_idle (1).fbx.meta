@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 53c040e05877fad46b2e488f3918af69
+guid: 3ab7f19ed1b96db4d99af2804f13a8a5
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable:
   - first:
       74: -1498010087492872569
-    second: Charger Sitting idle
+    second: SitIdle
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -35,7 +35,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Charger Sitting idle
+      name: SitIdle
       takeName: CINEMA_4D_Main
       internalID: 0
       firstFrame: 0
@@ -126,7 +126,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
