@@ -8,9 +8,11 @@ namespace Jupiter
     {
         public  warping Warping;
         public GameObject USB;
+        public GameObject Sound;
 
         void OnTriggerEnter(Collider other)
         {
+            DestroyImmediate(Sound);
             USB.SetActive(false);
             Warping.Warp();
 
