@@ -8,7 +8,8 @@ public class DsEject : MonoBehaviour
     GameManager manager;
     public GameObject coin;
     BoxCollider trigger;
- 
+    public GameObject Canvasimg;
+
     private void Awake()
     {
         manager = GameObject.Find("GameManager").GetComponent<GameManager>();
@@ -19,8 +20,9 @@ public class DsEject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (manager.BlueCarMove)
+        if (manager.DSEject)
         {
+            DestroyImmediate(Canvasimg);
             trigger.enabled = true;
             anim.Play("coin popping out of ds");
             

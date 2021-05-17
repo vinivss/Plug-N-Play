@@ -16,8 +16,10 @@ namespace Squid
         bool isIn;
         bool load;
         public GameObject cont;
-
-
+        [SerializeField] bool climber;
+      
+        [SerializeField] bool miniUsB;
+       
 
         void Awake()
         {
@@ -29,21 +31,24 @@ namespace Squid
             cont = GameObject.Find("Player1 1");
             control.CharacterControls.Pickup.performed += ctx =>
             {
-                if (isIn == true)
-
+                if ((!climber || Manager.Climber) && (!miniUsB ||  Manager.USBmini))
                 {
-                    if (load != true)
-                    {
-                        sceneLoad();
-                    }
-                    if (load == true)
-                    {
-                        Cursor.lockState = CursorLockMode.None;
-                        //Time.timeScale = 0;
-                        cont.SetActive(false);
-                       
-                    }
+                    if (isIn == true)
 
+                    {
+                        if (load != true)
+                        {
+                            sceneLoad();
+                        }
+                        if (load == true)
+                        {
+                            Cursor.lockState = CursorLockMode.None;
+                            //Time.timeScale = 0;
+                            cont.SetActive(false);
+
+                        }
+
+                    }
                 }
             };
         }

@@ -47,7 +47,7 @@ namespace Squid
         {
             if (start)
             {
-                Debug.LogError("called");
+                //Debug.LogError("called");
                 timer -= 0.5f;
             }
             if (timer <= 0.0f)
