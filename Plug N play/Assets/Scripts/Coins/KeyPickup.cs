@@ -6,6 +6,7 @@ public class KeyPickup : MonoBehaviour
 {
     GameManager manager;
     _3Dcontrols control;
+    public GameObject particle;
     bool isIn;
 
      void Awake()
