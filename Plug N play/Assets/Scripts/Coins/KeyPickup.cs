@@ -21,7 +21,7 @@ public class KeyPickup : MonoBehaviour
             {
                 manager.CoinCount++;
                 Debug.Log(manager.CoinCount);
-
+                particle.SetActive(true);
                 DestroyImmediate(gameObject);
 
             }

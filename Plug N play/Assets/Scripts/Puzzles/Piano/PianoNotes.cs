@@ -39,7 +39,7 @@ namespace Squid
             cont = GameObject.FindObjectOfType<AsyncScene>();
             manager = GameObject.Find("GameManager").GetComponent<GameManager>();
             Cursor.lockState = CursorLockMode.None;
-            SceneManager.SetActiveScene(SceneManager.GetSceneByName("Spin"));
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName("Piano"));
         }
         public void Update()
         {
@@ -344,6 +344,7 @@ namespace Squid
 
             if (winTime <= 0.0f)
             {
+                manager.CoinCount++;
                 //Debug.LogError("Ew");
                 Cursor.lockState = CursorLockMode.Locked;
 
