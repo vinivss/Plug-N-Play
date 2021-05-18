@@ -16438,7 +16438,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000034332, y: -10.839}
+  m_AnchoredPosition: {x: 0.000003815, y: 0.55995}
   m_SizeDelta: {x: 480.00055, y: 330.96835}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1508783514
@@ -16474,20 +16474,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Thank you bair, for making me rediscover my love for games, and making
-    me grow not only as a student but as a person.
-
-
-    And to you, the greatest
-    team anyone could have asked for. thank you for being an inspiration, not only
-    through your beautiful and impactful art, but by accepting me as not only a teammate
-    but as a friend.
-
-
-
-    To All of you. Thank you for making my life so much better!
-
-'
+  m_Text: "Thank you bair, for making me rediscover my love for games, and making
+    me grow not only as a student but as a person.\n\nAnd to you: Shanhao, Jose,
+    Julianne and Joshua the greatest team anyone could have asked for. thank you
+    for being an inspiration, not only through your beautiful and impactful art,
+    but by accepting me as not only a teammate but as a friend.\n\n\t\t\t\t\nTo All
+    of you. Thank you for making my life so much better!\n\t\t\t\t-Vini"
 --- !u!222 &1508783515
 CanvasRenderer:
   m_ObjectHideFlags: 0
