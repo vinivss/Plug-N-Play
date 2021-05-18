@@ -257,7 +257,7 @@ namespace Jupiter
             float dis = raytomovedir;
             Vector3 dir = moveDir;
 
-            Debugline.singleton.SetLine(origin, origin + (dir * dis), 0);
+            //Debugline.singleton.SetLine(origin, origin + (dir * dis), 0);
            // Debug.DrawRay(origin, dir * dis, Color.red);
 
             //Raycast towards the direction you want to move
@@ -277,8 +277,8 @@ namespace Jupiter
             float dis2 = angledist;
 
             //cast towards wall
-            Debugline.singleton.SetLine(origin,  (dir * dis2), 1);
-            Debug.DrawRay(origin, dir * dis2 , Color.green);
+            //Debugline.singleton.SetLine(origin,  (dir * dis2), 1);
+            //Debug.DrawRay(origin, dir * dis2 , Color.green);
             
             if (Physics.Raycast(origin, dir, out hit, dis2, ignorelayer))
             {
@@ -289,7 +289,7 @@ namespace Jupiter
             }
             origin = origin + (dir * dis2);
             dir = -moveDir;
-            Debugline.singleton.SetLine(origin, origin + dir , 1);
+            //Debugline.singleton.SetLine(origin, origin + dir , 1);
             if (Physics.Raycast(origin,dir,out hit, angledist,  ignorelayer))
             {
                 helper.position = PosWithOffset(origin, hit.point);
@@ -301,9 +301,9 @@ namespace Jupiter
             origin += dir * dis2;
 
             dir = -Vector3.up;
-            Debugline.singleton.SetLine(origin, origin + dir , 2);
-            Debug.DrawRay(origin, dir, Color.blue);
-            Debugline.singleton.SetLine(origin, origin + (dir * dis), 3);
+            //Debugline.singleton.SetLine(origin, origin + dir , 2);
+            //Debug.DrawRay(origin, dir, Color.blue);
+            //Debugline.singleton.SetLine(origin, origin + (dir * dis), 3);
             if (Physics.Raycast(origin, dir, out hit, dis2, ignorelayer))
             {
                 float angle = Vector3.Angle(-helper.forward, hit.normal);
@@ -323,10 +323,10 @@ namespace Jupiter
             Vector3 Dir = -Vector3.up;
             RaycastHit hit;
 
-            Debugline.singleton.SetLine(Origin, Dir, 1);
+            //Debugline.singleton.SetLine(Origin, Dir, 1);
             if(Physics.Raycast(Origin,Dir,out hit, raytomovedir))
             {
-                Debug.LogWarning("Touch ass");
+                //Debug.LogWarning("Touch ass");
                 a_hook.enabled = false;
                 isClimbing = false;
                 currentMove.x = 0f;

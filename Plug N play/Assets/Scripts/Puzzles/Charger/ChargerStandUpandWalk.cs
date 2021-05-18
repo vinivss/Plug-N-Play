@@ -56,9 +56,9 @@ public class ChargerStandUpandWalk : MonoBehaviour
             plugme.SetActive(false);
 
 
-        
 
-       
+
+             isIn = false;
             plugyou.SetActive(false);
         
     }
