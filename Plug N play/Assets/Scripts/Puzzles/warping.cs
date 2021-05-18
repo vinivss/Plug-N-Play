@@ -17,7 +17,7 @@ namespace Jupiter
         public void Warp()
         {
             
-            Debug.LogError("IN");
+            //Debug.LogError("IN");
             Vector3 warpPos = WarpPoint.transform.position;
             
             USB.transform.position = WarpPoint.transform.position;

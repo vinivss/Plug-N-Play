@@ -8,6 +8,7 @@ public class DsEject : MonoBehaviour
     GameManager manager;
     public GameObject coin;
     BoxCollider trigger;
+    public bool Boolamitai;
     public GameObject Canvasimg;
 
     private void Awake()
@@ -23,7 +24,11 @@ public class DsEject : MonoBehaviour
         if (manager.DSEject)
         {
             DestroyImmediate(Canvasimg);
-            trigger.enabled = true;
+            if (!Boolamitai)
+            {
+                Boolamitai = true;
+                trigger.enabled = true;
+            }
             anim.Play("coin popping out of ds");
             
            

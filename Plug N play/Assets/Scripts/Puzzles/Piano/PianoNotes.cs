@@ -28,7 +28,7 @@ namespace Squid
         public int notewin = 6;
         public int timeskeypress;
         public GameObject WinScreen;
-        float winTime = 2.0f;
+        float winTime = 5.0f;
         GameManager manager;
         enPiano piano;
         public bool win;
@@ -43,13 +43,16 @@ namespace Squid
         }
         public void Update()
         {
-         
-                if (win == true)
+            Debug.Log(winTime);
+            if (win)
                 {
+                Debug.Log(winTime);
+                WinScreen.SetActive(true);
+                winTime -= Time.deltaTime;
+                if (winTime <= 0.0f)
+                    Win();
 
-                    winTime = winTime - Time.fixedDeltaTime;
-                    
-                }
+            }
             
         }
         public void playPiano(enPiano note)
@@ -67,7 +70,7 @@ namespace Squid
                         else if(timeskeypress >= notewin)
                         {
                             win = true;
-                            Win();
+                          
                         }
 
                         break;
@@ -85,7 +88,7 @@ namespace Squid
                         else if (timeskeypress >= notewin)
                         {
                             win = true;
-                            Win();
+                      
                         }
                         break;
 
@@ -100,7 +103,7 @@ namespace Squid
                         else if (timeskeypress >= notewin)
                         {
                             win = true;
-                            Win();
+                           
                         }
                         break;
 
@@ -115,7 +118,7 @@ namespace Squid
                         else if (timeskeypress >= notewin)
                         {
                             win = true;
-                            Win();
+                           
                         }
                         break;
 
@@ -130,7 +133,7 @@ namespace Squid
                         else if (timeskeypress >= notewin)
                         {
                             win = true;
-                            Win();
+                            
                         }
                         break;
 
@@ -145,7 +148,7 @@ namespace Squid
                         else if (timeskeypress >= notewin)
                         {
                             win = true;
-                            Win();
+                            
                         }
                         break;
 
@@ -160,7 +163,7 @@ namespace Squid
                         else if (timeskeypress >= notewin)
                         {
                             win = true;
-                            Win();
+                           
                         }
                         break;
 
@@ -175,7 +178,7 @@ namespace Squid
                         else if (timeskeypress >= notewin)
                         {
                             win = true;
-                            Win();
+                          
                         }
                         break;
 
@@ -190,7 +193,7 @@ namespace Squid
                         else if (timeskeypress >= notewin)
                         {
                             win = true;
-                            Win();
+                           
                         }
                         break;
 
@@ -205,7 +208,7 @@ namespace Squid
                         else if (timeskeypress >= notewin)
                         {
                             win = true;
-                            Win();
+                           
                         }
                         break;
 
@@ -220,7 +223,7 @@ namespace Squid
                         else if (timeskeypress >= notewin)
                         {
                             win = true;
-                            Win();
+                           
                         }
                         break;
 
@@ -235,7 +238,7 @@ namespace Squid
                         else if (timeskeypress >= notewin)
                         {
                             win = true;
-                            Win();
+                           
                         }
                         break;
 
@@ -250,7 +253,7 @@ namespace Squid
                         else if (timeskeypress >= notewin)
                         {
                             win = true;
-                            Win();
+                           
                         }
                         break;
 
@@ -265,7 +268,7 @@ namespace Squid
                         else if (timeskeypress >= notewin)
                         {
                             win = true;
-                            Win();
+                           
                         }
                         break;
 
@@ -280,7 +283,7 @@ namespace Squid
                         else if (timeskeypress >= notewin)
                         {
                             win = true;
-                            Win();
+                           
                         }
                         break;
 
@@ -295,7 +298,7 @@ namespace Squid
                         else if (timeskeypress >= notewin)
                         {
                             win = true;
-                            Win();
+                            
                         }
                         break;
 
@@ -310,7 +313,7 @@ namespace Squid
                         else if (timeskeypress >= notewin)
                         {
                             win = true;
-                            Win();
+                         
                         }
                         break;
 
@@ -325,7 +328,7 @@ namespace Squid
                         else if (timeskeypress >= notewin)
                         {
                             win = true;
-                            Win();
+                          
                         }
                         break;
 
@@ -337,13 +340,15 @@ namespace Squid
         {
 
 
-
+            win = true;
             //WinScreen.SetActive(true);
-            cont.becomeActive();
-
+            
+            WinScreen.SetActive(true);
 
             if (winTime <= 0.0f)
             {
+                cont.becomeActive();
+                WinScreen.SetActive(false);
                 manager.CoinCount++;
                 //Debug.LogError("Ew");
                 Cursor.lockState = CursorLockMode.Locked;

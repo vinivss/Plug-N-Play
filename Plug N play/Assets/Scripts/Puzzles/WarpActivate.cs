@@ -12,7 +12,7 @@ namespace Jupiter
 
         void OnTriggerEnter(Collider other)
         {
-            DestroyImmediate(Sound);
+            Destroy(Sound);
             USB.SetActive(false);
             Warping.Warp();
 

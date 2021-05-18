@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace Jupiter
 {
+    
 
     public class RaceBlue : MonoBehaviour
     {
@@ -11,7 +12,7 @@ namespace Jupiter
         GameManager manager;
         GameObject Brain;
         public GameObject Sound;
-
+        bool mrBool;
 
 
         void Awake()
@@ -22,9 +23,13 @@ namespace Jupiter
         {
             if (manager.BlueCarMove)
             {
-                Sound.SetActive(true);
-                anim.Play("CarMove");
-                
+                if (!mrBool)
+                {
+
+                    mrBool = true;
+                    Sound.SetActive(true);
+                    anim.Play("CarMove");
+                }
                 //if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 10f)
                 //{
                 //    Debug.LogError("YES");

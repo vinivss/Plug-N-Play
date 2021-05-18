@@ -28,7 +28,7 @@ namespace Jupiter
         }
        public  void ButtonPress()
         {
-            Debug.LogAssertionFormat("CameraCalledProperly");
+            //Debug.LogAssertionFormat("CameraCalledProperly");
             CamUSB.SetActive(false);
             CamCar.SetActive(true);
             gameManager.BlueCarMove = true;
@@ -37,7 +37,7 @@ namespace Jupiter
         }
         public void ButtonPressCat()
         {
-            Debug.LogAssertionFormat("CameraCalledProperly");
+
           
             gameManager.FireTruck = true;
             Destroy(Cat);
