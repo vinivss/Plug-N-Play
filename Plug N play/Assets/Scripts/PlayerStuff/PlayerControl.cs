@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+
 namespace Jupiter
 {
     public class PlayerControl : MonoBehaviour
@@ -64,7 +65,7 @@ namespace Jupiter
             VelocityZHash = Animator.StringToHash("VelocityZ");
             VelocityXHash = Animator.StringToHash("VelocityX");
 
-            
+            Physics.IgnoreLayerCollision(0, 9);
             
         }
 

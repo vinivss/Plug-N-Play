@@ -39,8 +39,9 @@ namespace Jupiter
             player.StartCoroutine(player.FreezeMovement(3));
           
         }
+      
 
-        public void ChangeStateUSBC()
+            public void ChangeStateUSBC()
         {
             totem2 = true;
             Totem2.SetActive(true);

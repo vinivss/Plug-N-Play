@@ -102,7 +102,7 @@ namespace Jupiter
 
             RaycastHit hit;
             //Debugline.singleton.SetLine(origin, dir+ origin, 5);
-            if (Physics.Raycast(origin, dir, out hit, 0.3f, ignorelayer))
+            if (Physics.Raycast(origin, dir, out hit, 0.4f, ignorelayer))
             {
                
                 helper.position = PosWithOffset(origin, hit.point);
@@ -280,7 +280,7 @@ namespace Jupiter
             Debugline.singleton.SetLine(origin,  (dir * dis2), 1);
             Debug.DrawRay(origin, dir * dis2 , Color.green);
             
-            if (Physics.Raycast(origin, dir, out hit, dis2))
+            if (Physics.Raycast(origin, dir, out hit, dis2, ignorelayer))
             {
                 //Debug.Log("Hit");
                 helper.position = PosWithOffset(origin, hit.point);
@@ -290,7 +290,7 @@ namespace Jupiter
             origin = origin + (dir * dis2);
             dir = -moveDir;
             Debugline.singleton.SetLine(origin, origin + dir , 1);
-            if (Physics.Raycast(origin,dir,out hit, angledist ))
+            if (Physics.Raycast(origin,dir,out hit, angledist,  ignorelayer))
             {
                 helper.position = PosWithOffset(origin, hit.point);
                 helper.rotation = Quaternion.LookRotation(-hit.normal);
@@ -304,7 +304,7 @@ namespace Jupiter
             Debugline.singleton.SetLine(origin, origin + dir , 2);
             Debug.DrawRay(origin, dir, Color.blue);
             Debugline.singleton.SetLine(origin, origin + (dir * dis), 3);
-            if (Physics.Raycast(origin, dir, out hit, dis2))
+            if (Physics.Raycast(origin, dir, out hit, dis2, ignorelayer))
             {
                 float angle = Vector3.Angle(-helper.forward, hit.normal);
                 if (angle < 40)
@@ -324,7 +324,7 @@ namespace Jupiter
             RaycastHit hit;
 
             Debugline.singleton.SetLine(Origin, Dir, 1);
-            if(Physics.Raycast(Origin,Dir,out hit, raytomovedir , ignorelayer))
+            if(Physics.Raycast(Origin,Dir,out hit, raytomovedir))
             {
                 Debug.LogWarning("Touch ass");
                 a_hook.enabled = false;

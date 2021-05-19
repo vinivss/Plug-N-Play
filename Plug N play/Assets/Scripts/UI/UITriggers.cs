@@ -18,6 +18,7 @@ namespace Jupiter
         public GameObject CamUSB;
         public GameObject CamCar;
         public GameObject Buttoff;
+        public GameObject Cat;
         public GameObject EasterButt;
 
 
@@ -32,6 +33,14 @@ namespace Jupiter
             CamCar.SetActive(true);
             gameManager.BlueCarMove = true;
             Destroy(MaximumOverdrive);
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        public void ButtonPressCat()
+        {
+            Debug.LogAssertionFormat("CameraCalledProperly");
+          
+            gameManager.FireTruck = true;
+            Destroy(Cat);
             Cursor.lockState = CursorLockMode.Locked;
         }
 

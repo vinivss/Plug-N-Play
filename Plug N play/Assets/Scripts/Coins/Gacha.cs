@@ -8,12 +8,15 @@ public class Gacha : MonoBehaviour
     _3Dcontrols control;
     public bool GIn = false;
     public Animator anim;
+    BoxCollider trigger;
+    public GameObject Capsule;
     public GameObject E;
     // Start is called before the first frame update
     void Awake()
     {
         manager = GameObject.Find("GameManager").GetComponent<GameManager>();
         control = new _3Dcontrols();
+        trigger = Capsule.GetComponent<BoxCollider>();
 
 
         control.CharacterControls.Pickup.performed += ctx =>
@@ -22,6 +25,7 @@ public class Gacha : MonoBehaviour
             {
                 manager.CoinCount = 0;
                 anim.Play("gachapon activating");
+                trigger.enabled = true;
             }
 
         };

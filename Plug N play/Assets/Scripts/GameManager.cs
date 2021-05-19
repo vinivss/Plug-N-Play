@@ -17,7 +17,8 @@ public class GameManager : MonoBehaviour
     public bool RoombaReady;
     public int CoinCount;
     public bool PianoDone;
-
+    public bool FireTruck;
+    public bool Fan;
 
 
 

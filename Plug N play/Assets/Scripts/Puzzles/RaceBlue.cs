@@ -10,6 +10,7 @@ namespace Jupiter
         public Animator anim;
         GameManager manager;
         GameObject Brain;
+        public GameObject Sound;
 
 
 
@@ -21,7 +22,9 @@ namespace Jupiter
         {
             if (manager.BlueCarMove)
             {
+                Sound.SetActive(true);
                 anim.Play("CarMove");
+                
                 //if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 10f)
                 //{
                 //    Debug.LogError("YES");
